@@ -10,7 +10,7 @@ import Developer from './Developer.js';
 
 import './css/App.css';
 import './css/home.module.css';
-import './css/cloud.css';
+import './css/cloud.module.css';
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'; 
 

@@ -1,0 +1,74 @@
+.header_cloud{
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+  margin-bottom: -200px;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 65%, 77% 65%, 20% 65%, 0 65%, 0 0);
+}
+
+img{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  width: 100%;
+  height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+  
+  /* Place text in the middle of the image */
+.hero_text {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.cloudBody{
+  top:0%;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+  
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+  
+.homeButton{
+  background-color: #e7e7e7; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+  
+/* Create two columns/boxes that floats next to each other */
+.side_nav{
+  float: left;
+  width: 22%;
+  height: auto; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+.side_nav_ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+.article_cloud{
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: auto; /* only for demonstration, should be removed */
+}

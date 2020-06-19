@@ -2,6 +2,7 @@
   text-align: center;
 }
 
+
 nav{
   display:flex; 
   justify-content: space-around;
@@ -18,12 +19,6 @@ nav{
   list-style: none; 
   align-items: center;  
 }
-
-.navStyle{
-    color: 'white'; 
-    text-decoration: none;  
-} 
-
 
 @keyframes App-logo-spin {
   from {

@@ -3,16 +3,13 @@ import React from 'react';
 import './css/App.css';
 
 
-
-
-
-function About() {
+function Developer() {
   return (
     <div>
-      <h1> About Pages </h1> 
+      <h1> Hey </h1> 
     </div>
   );
 }
 
 
-export default About;
+export default Developer;

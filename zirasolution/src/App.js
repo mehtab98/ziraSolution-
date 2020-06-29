@@ -7,12 +7,17 @@ import Home from './Home';
 import Cloud from './Cloud';
 import Network from './Network';
 import Developer from './Developer.js';
+import cloudMigration from './cloudMigration';
+import cloudManagement from './cloudManagement';
+import cloudArchitecture from './cloudArchitecture';
 
 import './css/App.css';
 import './css/home.module.css';
-import './css/cloud.module.css';
+import './css/genView.module.css';
+import './network.module.css';
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'; 
+
 
 function App() {
 
@@ -27,10 +32,25 @@ function App() {
         		<Route path = "/" exact component={Home}/>  
         		
         		<Route path = "/about" component={About}/>                       
-				<Route path = "/cloud" component={Cloud}/>                       
+				<Route path = "/cloud" component={Cloud}/>   
+
+				<Route path = "/cloudMigration" component={cloudMigration}/> 
+
+				<Route path = "/cloudManagement" component={cloudManagement}/> 
+
+				<Route path = "/cloudArchitecture" component={cloudArchitecture}/> 
+
 				<Route path = "/network" component={Network}/>  
 
-				<Route path = "/developer" component={Developer}/>                                                        
+
+				<Route path = "/development" component={Developer}/>  
+
+				<Route path = "/developmentBackend" component={Developer}/>
+
+				<Route path = "/developmentWeb" component={Developer}/>  
+
+				<Route path = "/developmentMobile" component={Developer}/>  
+
         		<Route path = "/shop" component={Shop}/>
 
         	</Switch>  

@@ -93,16 +93,21 @@ function Nav() {
         <div className="dropdown">
           <button className="dropbtn">Infrastructure</button>
           <div className="dropdown-content">
-            <Link style={linkStyle} to='/network'>
-            <a href="#">Link 1</a>
+            <Link style={linkStyle} to='/networkRoadMap'>
+              <a style={inLink}>Project Roadmap</a>
             </Link>
-            <Link style={linkStyle} to='/network'>
-            <a href="#">Link 2</a>
+            <Link style={linkStyle} to='/networkService'>
+              <a style={inLink}>Network Management</a>
             </Link>
-            <Link style={linkStyle} to='/network'>
-            <a href="#">Link 3</a>
+            <Link style={linkStyle} to='/networkStorage'>
+              <a style={inLink}>Storage Management</a>
+            </Link>
+            <Link style={linkStyle} to='/networkSecurity'>
+              <a style={inLink}>Network Security</a>
             </Link> 
-
+            <Link style={linkStyle} to='/operatingSystem'>
+              <a style={inLink}>Operating System</a>
+            </Link>
           </div>
         </div>
 

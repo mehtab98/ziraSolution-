@@ -7,9 +7,16 @@ import Home from './Home';
 import Cloud from './Cloud';
 import Network from './Network';
 import Developer from './Developer.js';
+
 import cloudMigration from './cloudMigration';
 import cloudManagement from './cloudManagement';
 import cloudArchitecture from './cloudArchitecture';
+
+import networkRoadMap from './networkRoadMap';
+import networkSecurity from './networkSecurity';
+import networkService from './networkService'; 
+import networkStorage from './networkStorage'; 
+import operatingSystem from './operatingSystem'; 
 
 import './css/App.css';
 import './css/home.module.css';
@@ -17,6 +24,7 @@ import './css/genView.module.css';
 import './network.module.css';
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'; 
+import { expression } from '@babel/template';
 
 
 function App() {
@@ -41,6 +49,16 @@ function App() {
 				<Route path = "/cloudArchitecture" component={cloudArchitecture}/> 
 
 				<Route path = "/network" component={Network}/>  
+
+				<Route path = "/networkService" component={networkService}/>  
+				
+				<Route path = "/networkStorage" component={networkStorage}/>  
+
+				<Route path = "/networkSecurity" component={networkSecurity}/> 
+
+				<Route path = "/operatingSystem" component={operatingSystem}/>
+
+				<Route path = "/networkRoadMap" component={networkRoadMap}/> 
 
 
 				<Route path = "/development" component={Developer}/>  

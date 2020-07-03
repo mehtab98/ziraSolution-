@@ -4,7 +4,16 @@ import './css/App.css';
 
 import style from './css/genView.module.css';
 
+import {Link} from 'react-router-dom'; 
+
 function Developer() {
+  const sideNavUl = {
+    listStyleType: "none",
+    lineHeight: "1100%",
+    padding: "0"
+  };
+
+  
   return (
     <React.Fragment>
   	<header className={style.header_views}>     
@@ -18,16 +27,23 @@ function Developer() {
 
       <section>
         <nav class={style.side_nav}>
-          <ul class={style.side_nav_ul}>
-            <li><button className={style.navButtons}>Backend Development</button></li>
-            <li><button className={style.navButtons}>Frontend Web Applications</button></li>
-            <li><button className={style.navButtons}>Frontend Mobile Applications</button></li>
+          <ul style={sideNavUl}>
+            <Link  to='/developmentBackend'>
+              <li><button className={style.navButtons}>Backend Development</button></li>
+            </Link>
+            <Link to='/developmentWeb'> 
+              <li><button className={style.navButtons}>Frontend Web Applications</button></li>
+            </Link>
+
+            <Link to='/developmentMobile'>
+             <li><button className={style.navButtons}>Frontend Mobile Applications</button></li>
+            </Link>
           </ul>
         </nav>
 
         <article className={style.article_view}>
           <h1 class={style.handle_title}>Backend Development</h1>
-          <p class={style.handle_text}> Our in house Developers prefer to develop backend of thier applications with a Node.js javascript environment. The Node.JS framework allows us to create effecient and scallable applications with a short turnaround time.</p>
+          <p class={style.handle_text}> Our in house Developers prefer to develop backend of their applications with a Node.js javascript environment. The Node.JS framework allows us to create effecient and scallable applications with a short turnaround time.</p>
           
           <p class={style.handle_text}> Our developers have the skillset to create RESTful APIs for your backend, and integrate third-party APIs with any previous application. The development team can design applications using either SQL or noSQL database. Furthermore, our team also has the skillset to develop scalable MicroService archeticture for your application utilizing Hapi.JS. When you work with ZiraSolution's backend development team, you'll be working with sharp-witted developers that have a motivating drive to excell applications. </p> 
             

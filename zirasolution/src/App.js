@@ -6,7 +6,11 @@ import Shop from './Shop';
 import Home from './Home';
 import Cloud from './Cloud';
 import Network from './Network';
+
 import Developer from './Developer.js';
+import developmentBackend from './developmentBackend.js'; 
+import developmentWeb from './developmentWeb.js'; 
+import developmentMobile from './developmentMobile.js'; 
 
 import cloudMigration from './cloudMigration';
 import cloudManagement from './cloudManagement';
@@ -63,11 +67,11 @@ function App() {
 
 				<Route path = "/development" component={Developer}/>  
 
-				<Route path = "/developmentBackend" component={Developer}/>
+				<Route path = "/developmentBackend" component={developmentBackend}/>
 
-				<Route path = "/developmentWeb" component={Developer}/>  
+				<Route path = "/developmentWeb" component={developmentWeb}/>  
 
-				<Route path = "/developmentMobile" component={Developer}/>  
+				<Route path = "/developmentMobile" component={developmentMobile}/>  
 
         		<Route path = "/shop" component={Shop}/>
 

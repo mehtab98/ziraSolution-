@@ -7,7 +7,7 @@ import style from './css/genView.module.css';
 function networkStorage() {
   return (
     <React.Fragment>
-  	  	<header className={style.header_views}>     
+  	<header className={style.header_views}>     
       <img src={require("./images/it_network.jpeg")}  alt="fog over the bay"/>
       <div class={style.hero_text_net}>
         <h1>Managing Storage</h1>
@@ -20,6 +20,7 @@ function networkStorage() {
       <section>
         
         <article className={style.article_view}>
+          
           <p class={style.handle_gentext}> Here at ZiraSolutions, we’ll make sure that you always have the right solution to meet your business requirements. In fact, we strive to go beyond what today’s businesses demand from a managed IT services provider.</p> 
             
           <p class={style.handle_gentext}> Our managed storage services can help you ensure that your data is available anytime, anywhere. It is a perfect solution for dynamic businesses or those with a widely distributed workforce that need to access their data from multiple locations in a variety of time zones.</p> 

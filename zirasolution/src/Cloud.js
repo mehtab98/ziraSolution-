@@ -4,6 +4,7 @@ import './css/App.css';
 
 import style from './css/genView.module.css';
 
+import {Link} from 'react-router-dom'; 
 
 function Cloud() {
   return (
@@ -20,9 +21,16 @@ function Cloud() {
       <section>
         <nav class={style.side_nav}>
           <ul class={style.side_nav_ul}>
+          <Link  to='/cloudMigration'>
             <li><button className={style.navButtons}>Cloud Migrations</button></li>
+          </Link>
+          <Link to='/cloudManagement'>
             <li><button className={style.navButtons}>Cloud Management</button></li>
+          </Link>
+
+          <Link to='/cloudArchitecture'> 
             <li><button className={style.navButtons}>Cloud Architecture</button></li>
+          </Link>
           </ul>
         </nav>
 

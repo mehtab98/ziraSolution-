@@ -112,7 +112,8 @@ function Nav() {
         </div>
 
         <Link style={linkStyle} to='/shop'> 
-          <li style={navStyles}><a href="./Developer"><button style={contactButton}>CONTACT US</button></a></li>
+          <li style={navStyles}><a href="./Developer">
+            <button style={contactButton}>CONTACT US</button></a></li>
       	</Link> 
       </ul> 	 
     </nav>

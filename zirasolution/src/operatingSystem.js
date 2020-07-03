@@ -10,8 +10,8 @@ function operatingSystem() {
   	  	<header className={style.header_views}>     
       <img src={require("./images/it_network.jpeg")}  alt="fog over the bay"/>
       <div class={style.hero_text_net}>
-        <h1>Cloud Architecture</h1>
-        <p> With the right cloud strategy and consulting services, an organization can elastically scale up or down to fit its ever-changing business needs.</p> 
+        <h1>Operating System</h1>
+        <p>No matter what Operating System your network uses or needs, we have the experience to cater to you.</p> 
       </div>
     </header>
 
@@ -20,48 +20,56 @@ function operatingSystem() {
       <section>
         
         <article className={style.article_view}>
-          <h1 className={style.handle_gentext}>Cloud Strategy and Planning</h1>
-          <p class={style.handle_gentext}> With the right cloud strategy and consulting services, an organization can elastically scale up or down to fit its ever-changing business needs. On-premise, managed servers are quickly approaching end-of-life, as viable platforms for business IT. The reasons are innumerable: Traditional physical servers take up precious space, require regular maintenance and updates, and operate on a constant basis—whether they are being actively utilized or not. We can help design the archeticeture for your product.</p> 
+          <p class={style.handle_gentext}> For your business to run smoothly, you must have complete confidence that your IT systems
+have been deployed and are being administered and managed with a high degree of expertise
+and efficiency.</p> 
             
-          <h1 className={style.handle_gentext}>Leverage Cloud for Business Growth</h1> 
-          <p class={style.handle_gentext}> Shifting data from standard hardware to the cloud offers a multitude of benefits, from the nearly infinite expandability, which helps businesses future-proof their IT, to as-needed access modes that save money and eliminate the unnecessary network utilization inherent to outdated systems. Cloud-based IT also geographically disperses data, eliminating the need for customers to purchase hardware for maximum capacity scenarios.</p> 
+          <p class={style.handle_gentext}> ZiraSolutions, delivers just what the name “managed IT systems” implies. We set up servers
+dedicated to meet your business needs in one of our state-of-the-art data centers. This ensures
+the highest level of security, availability, service, flexibility and scalability.</p> 
+          <p class={style.handle_gentext}> Our managed operating system solution also comes with a high-level of professional support,
+saving you time and money. Our managed IT systems services are structured to deliver the service you need, when you
+need it, including:</p> 
 
-          <h1 className={style.handle_gentext}>Proven Cloud Expertise</h1>
-          <p class={style.handle_gentext}> Whether your business is thinking of making the leap, or you have already begun planning, our cloud strategy consulting services help optimize the process and keep your costs and downtime to a minimum. Our leading cloud experts have done this work for hundreds of companies – and know how to navigate the complex landscape and avoid pitfalls, while also allowing our customers the freedom to grow.</p> 
-          <p class={style.handle_gentext}> You’ll be able to better leverage the cloud, analyze your current environment, identify gaps, plan for both your long- and short-term goals. Determine the best cloud providers for your distinct business requirements and build a custom cloud strategy that feels comfortable, worry-free and individually tailored to your unique needs.</p> 
+           <ul className={style.bulletCol}>
+            <div className={style.columns}>
 
-          <h1 className={style.handle_gentext}>Consulting Services</h1>
-          <p class={style.handle_gentext}> Our cloud strategy and planning services include, but are not limited to, the following:</p> 
+              <div className={style.col1}> 
+                <li className={style.bulletStyle}>Single point of contact</li>
+                <li className={style.bulletStyle}>Guaranteed response time</li>
+                <li className={style.bulletStyle}>24/7/365 monitoring of critical services</li>
+              </div>
+
+              <div className={style.col2 }> 
+                <li className={style.bulletStyle}>Patch Updates</li>
+                <li className={style.bulletStyle}>Remote support for resolution</li>
+                <li className={style.bulletStyle}>Reporting for capacity planning</li>
+              </div>
+            </div> 
+          </ul>  
+
+          <h1 className={style.handle_gentext}>Available Operating System:</h1>
+          <p class={style.handle_gentext}> ZiraSolutions’s infrastructure management services team provides the right support to ensure
+that your investment will continue to pay dividends for many years to come.We also offer full, robust management of the following systems:</p> 
           <ul className={style.bulletCol}>
             <div className={style.columns}>
 
               <div className={style.col1}> 
-                <li className={style.bulletStyle}>Workload portfolio analysis</li>
-                <li className={style.bulletStyle}>Benchmarking</li>
-                <li className={style.bulletStyle}>Readiness</li>
-                <li className={style.bulletStyle}>Assessments</li>
+                <li className={style.bulletStyle}>OS: Windows Servers</li>
+                <li className={style.bulletStyle}>OS: Redhat</li>
+                <li className={style.bulletStyle}>OS: Oracle</li>
+                <li className={style.bulletStyle}>OS: CentOS</li>
               </div>
 
               <div className={style.col2 }> 
-                <li className={style.bulletStyle}>Data Management</li>
-                <li className={style.bulletStyle}>Architecture Design</li>
-                <li className={style.bulletStyle}>Total Cost of Ownership</li>
-                <li className={style.bulletStyle}>Risk Mitigation Strategy</li>
+                <li className={style.bulletStyle}>OS: SuSe</li>
+                <li className={style.bulletStyle}>Hypervisor: VMware</li>
+                <li className={style.bulletStyle}>Hypervisor: Microsoft Hyper-V</li>
+                <li className={style.bulletStyle}>Hypervisor: Oracle VM</li>
               </div>
-
-              <div className={style.col3}> 
-                <li className={style.bulletStyle}>Business Case</li>
-                <li className={style.bulletStyle}>Change Readiness</li>
-                <li className={style.bulletStyle}>Deployment Roadmap</li>
-                <li className={style.bulletStyle}>Cost Management</li>
-              </div>
-
             </div> 
           </ul>  
 
-
-
-          <p class={style.handle_gentext}> For businesses acclimatizing to or already in the cloud, our 24/7 help desk and self-service management solutions build enormous long-term value and ease of use into service packages. ZiraSoltuions removes the burden of troubleshooting and maintenance, by addressing IT concerns before they become IT problems.</p> 
 
           <button className={style.consultButton}>Schedule a consultation</button>
 

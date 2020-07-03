@@ -71,7 +71,7 @@ will stay updated on changes to your organization and provide a quarterly review
         <div class={styles.col}>
         <h3 class={styles.left_title}>Years in buisness</h3> 
           <img class={styles.animation_icon} src={require("./images/biz_icon.png")}  alt="wifi"/>
-          <h3 class={StyleSheetList.bar_text}><CountUp  delay={2} end={15} /> +</h3>
+          <h3 class={styles.bar_text}><CountUp  delay={2} end={15} /> +</h3>
           
         </div>
 

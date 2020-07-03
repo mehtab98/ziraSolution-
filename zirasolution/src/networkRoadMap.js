@@ -2,17 +2,17 @@ import React from 'react';
 import CountUp from 'react-countup';
 import './css/App.css';
 
-import style from './css/genView.module.css';
-
+import style from './css/columnView.module.css';
+import styles from './css/genView.module.css'; 
+import { lookup } from 'dns';
 function networkRoadMap() {
   return (
     <React.Fragment>
-       
-  	  	<header className={style.header_views}>     
+  	<header className={style.header_views}>     
       <img src={require("./images/it_network.jpeg")}  alt="fog over the bay"/>
       <div class={style.hero_text_net}>
-        <h1>Cloud Architecture</h1>
-        <p> With the right cloud strategy and consulting services, an organization can elastically scale up or down to fit its ever-changing business needs.</p> 
+        <h1>Project Roadmap</h1>
+        <p>We take every project with serious consideration. We have higlighted the steps we take when it comes to designing your infrastructure</p> 
       </div>
     </header>
 
@@ -21,76 +21,81 @@ function networkRoadMap() {
       <section>
         
         <article className={style.article_view}>
-          <h1 className={style.handle_gentext}>Cloud Strategy and Planning</h1>
-          <p class={style.handle_gentext}> With the right cloud strategy and consulting services, an organization can elastically scale up or down to fit its ever-changing business needs. On-premise, managed servers are quickly approaching end-of-life, as viable platforms for business IT. The reasons are innumerable: Traditional physical servers take up precious space, require regular maintenance and updates, and operate on a constant basis—whether they are being actively utilized or not. We can help design the archeticeture for your product.</p> 
-            
-          <h1 className={style.handle_gentext}>Leverage Cloud for Business Growth</h1> 
-          <p class={style.handle_gentext}> Shifting data from standard hardware to the cloud offers a multitude of benefits, from the nearly infinite expandability, which helps businesses future-proof their IT, to as-needed access modes that save money and eliminate the unnecessary network utilization inherent to outdated systems. Cloud-based IT also geographically disperses data, eliminating the need for customers to purchase hardware for maximum capacity scenarios.</p> 
+        <h1 className={style.handle_gentext}>Step 1: Assessment</h1>
+          <p class={style.handle_gentext}> We take the time to learn your business needs. To become a strong business partner for your
+organization, we explore the following questions:</p>
 
-          <h1 className={style.handle_gentext}>Proven Cloud Expertise</h1>
-          <p class={style.handle_gentext}> Whether your business is thinking of making the leap, or you have already begun planning, our cloud strategy consulting services help optimize the process and keep your costs and downtime to a minimum. Our leading cloud experts have done this work for hundreds of companies – and know how to navigate the complex landscape and avoid pitfalls, while also allowing our customers the freedom to grow.</p> 
-          <p class={style.handle_gentext}> You’ll be able to better leverage the cloud, analyze your current environment, identify gaps, plan for both your long- and short-term goals. Determine the best cloud providers for your distinct business requirements and build a custom cloud strategy that feels comfortable, worry-free and individually tailored to your unique needs.</p> 
+          <ul class={style.bulletStyle}> 
+            <li> What are your business goals?</li>
+            <li> What role does technology play in the organization? </li>
+            <li> How can technology enhance your operations?</li> 
+          </ul>
 
-          <h1 className={style.handle_gentext}>Consulting Services</h1>
-          <p class={style.handle_gentext}> Our cloud strategy and planning services include, but are not limited to, the following:</p> 
-          <ul className={style.bulletCol}>
-            <div className={style.columns}>
+          <h1 className={style.handle_gentext}>Step 2: Report Our Findings</h1>
+          <p class={style.handle_gentext}>We share our candid assessment of challenges and opportunities and use this understanding to
+develop a holistic technology strategy and prioritize solutions. This is a collaborative process with
+your leadership team allowing our professionals to confirm their knowledge of your business and
+operational goals.</p> 
 
-              <div className={style.col1}> 
-                <li className={style.bulletStyle}>Workload portfolio analysis</li>
-                <li className={style.bulletStyle}>Benchmarking</li>
-                <li className={style.bulletStyle}>Readiness</li>
-                <li className={style.bulletStyle}>Assessments</li>
-              </div>
+          <h1 className={style.handle_gentext}>Step 3: Roadmap Designed</h1>
+          <p class={style.handle_gentext}>From our discussions, we create a road-map of high level projects to be completed with mutually
+agreed upon timelines. This conversation includes a discussion of budget for immediate and
+longer term projects.</p> 
 
-              <div className={style.col2 }> 
-                <li className={style.bulletStyle}>Data Management</li>
-                <li className={style.bulletStyle}>Architecture Design</li>
-                <li className={style.bulletStyle}>Total Cost of Ownership</li>
-                <li className={style.bulletStyle}>Risk Mitigation Strategy</li>
-              </div>
+          <h1 className={style.handle_gentext}>Step 4: Alignment</h1>
+          <p class={style.handle_gentext}>We will provide a Statement of Work to ensure we are aligned with expectations and then begin
+the on-boarding process. We believe in clear communication at every step of the process and
+transparency in the cost of our services.</p> 
+          <h1 className={style.handle_gentext}>Step 5: Onboarding</h1>
+          <p class={style.handle_gentext}>As part of the managed services contract, we provide a detailed onboarding process which
+generally happens 2-4 weeks prior to going live. The process timeline depends on your
+organization’s complexity and technology requirements. We gather information on current
+software applications, equipment, infrastructure and security that we will support and document
+this for easy access. During the onboarding process:</p>  
+          <ul class={style.bulletStyle}> 
+            <li> We assign a client service manager and technical team to support your business</li>
+            <li> Technical teams shares knowledge and understanding of your business systems with the technical support team</li>
+            <li> We create a complete inventory of your systems, network and operations</li> 
+          </ul>
+          <h1 className={style.handle_gentext}>Step 6: Go Live</h1> 
+          <p class={style.handle_gentext}>Once a go-live date is established, the ZiraSolution’s Technology account team will meet with
+you to walk through the transition plan to set expectations, establish communication tools and
+agree on milestones to ensure a smooth process.</p>  
+            <p class={style.handle_gentext}>Our client service professionals will check in regularly becoming an extension of your team. They
+will stay updated on changes to your organization and provide a quarterly review of services to highlight benchmarks made from our roadmap</p>  
 
-              <div className={style.col3}> 
-                <li className={style.bulletStyle}>Business Case</li>
-                <li className={style.bulletStyle}>Change Readiness</li>
-                <li className={style.bulletStyle}>Deployment Roadmap</li>
-                <li className={style.bulletStyle}>Cost Management</li>
-              </div>
-
-            </div> 
-          </ul>  
-
-
-
-          <p class={style.handle_gentext}> For businesses acclimatizing to or already in the cloud, our 24/7 help desk and self-service management solutions build enormous long-term value and ease of use into service packages. ZiraSoltuions removes the burden of troubleshooting and maintenance, by addressing IT concerns before they become IT problems.</p> 
 
           <button className={style.consultButton}>Schedule a consultation</button>
 
-        <div class={style.container_animation}>
+          <div class={styles.container_animation}>
+        <div class={styles.col}>
+        <h3 class={styles.left_title}>Years in buisness</h3> 
+          <img class={styles.animation_icon} src={require("./images/biz_icon.png")}  alt="wifi"/>
+          <h3 class={StyleSheetList.bar_text}><CountUp  delay={2} end={15} /> +</h3>
+          
+        </div>
 
-          <div class={style.col}>
-            <h2 class={style.wht_txt}><CountUp  delay={2} end={63} /> %</h2>
-            <p class={style.container_textL}> Organizations believe that digital transformation is driven by cloud adoption</p> 
-          </div>
+        <div class={styles.col}>
+        <h3 class={styles.bar_text}>Team Members</h3>
+          <img class={styles.animation_icon} src={require("./images/team_m.jpg")}  alt="wifi"/> 
+          <h3 class={styles.bar_text}><CountUp delay={2} end={10} /> +</h3>
+          
+        </div>
 
-          <div class={style.col}> 
-          <h2 class={style.wht_txt}><CountUp  delay={2} end={27} /> %</h2>
-            <p class={style.container_text}>Reduction in on-site work by joining the cloud</p> 
-            
-          </div>
+        <div class={styles.col}>
+          <h3 class={styles.bar_text}>Finished Projects</h3> 
+          <img class={styles.animation_icon} src={require("./images/projects.png")}  alt="wifi"/>
 
-          <div class={style.col}>
-            <h2 class={style.wht_txt}><CountUp  delay={2} end={75} /> %</h2>
-            <p class={style.container_text}> Orginizations utilize a cloud-first strategy</p> 
-            
-          </div>
+          <h3 class={styles.bar_text}><CountUp delay={2} end={350} /> +</h3>
+          
+        </div>
 
-          <div class={style.col}>
-             
-            <h2 class={style.wht_txt}><CountUp  delay={2} end={172} /></h2>
-            <p class={style.container_textR}> Customers have been migrated by Zira Solution Experts </p> 
-            
-          </div>
+        <div class={styles.col}>
+          <h3 class={styles.right_title}>Certificates</h3> 
+          <img class={styles.animation_icon} src={require("./images/certificate.jpg")}  alt="wifi"/>
+          <h3 class={styles.bar_text}><CountUp delay={2} end={15}/> +</h3>
+          
+        </div>
       </div>
 
         </article>

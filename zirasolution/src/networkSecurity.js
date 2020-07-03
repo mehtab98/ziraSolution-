@@ -7,105 +7,79 @@ import style from './css/genView.module.css';
 function networkSecurity() {
   return (
     <React.Fragment>
-  	  	<header className={style.header_views}>     
-      <img src={require("./images/it_network.jpeg")}  alt="fog over the bay"/>
-      <div class={style.hero_text_net}>
-        <h1>Cloud Architecture</h1>
-        <p> With the right cloud strategy and consulting services, an organization can elastically scale up or down to fit its ever-changing business needs.</p> 
-      </div>
-    </header>
+    <header className={style.header_views}>     
+  <img src={require("./images/it_network.jpeg")}  alt="fog over the bay"/>
+  <div class={style.hero_text_net}>
+    <h1>Security Service</h1>
+    <p>Cyberthreats are on the rise & budgets are shrinking. Leave this vital task to a security services provider with experience.</p> 
+  </div>
+</header>
 
-    <body className={style.BodyView}>
+<body className={style.BodyView}>
 
-      <section>
+  <section>
+    
+    <article className={style.article_view}>
+      <p class={style.handle_gentext}> Our approach to our customers’ security is demonstrated in our managed security services framework. We base our work on the core principles of the CIA triad: Confidentiality, Integrity and Availability.</p> 
         
-        <article className={style.article_view}>
-          <h1 className={style.handle_gentext}>Cloud Strategy and Planning</h1>
-          <p class={style.handle_gentext}> With the right cloud strategy and consulting services, an organization can elastically scale up or down to fit its ever-changing business needs. On-premise, managed servers are quickly approaching end-of-life, as viable platforms for business IT. The reasons are innumerable: Traditional physical servers take up precious space, require regular maintenance and updates, and operate on a constant basis—whether they are being actively utilized or not. We can help design the archeticeture for your product.</p> 
-            
-          <h1 className={style.handle_gentext}>Leverage Cloud for Business Growth</h1> 
-          <p class={style.handle_gentext}> Shifting data from standard hardware to the cloud offers a multitude of benefits, from the nearly infinite expandability, which helps businesses future-proof their IT, to as-needed access modes that save money and eliminate the unnecessary network utilization inherent to outdated systems. Cloud-based IT also geographically disperses data, eliminating the need for customers to purchase hardware for maximum capacity scenarios.</p> 
+      <p class={style.handle_gentext}> Everything we do for our customers is built and managed to strict best practices that provide a level of operational excellence achieved through rigorous ITIL process and procedure, best-in-class technology, top-tier data centers and truly exceptional engineering talent.</p> 
 
-          <h1 className={style.handle_gentext}>Proven Cloud Expertise</h1>
-          <p class={style.handle_gentext}> Whether your business is thinking of making the leap, or you have already begun planning, our cloud strategy consulting services help optimize the process and keep your costs and downtime to a minimum. Our leading cloud experts have done this work for hundreds of companies – and know how to navigate the complex landscape and avoid pitfalls, while also allowing our customers the freedom to grow.</p> 
-          <p class={style.handle_gentext}> You’ll be able to better leverage the cloud, analyze your current environment, identify gaps, plan for both your long- and short-term goals. Determine the best cloud providers for your distinct business requirements and build a custom cloud strategy that feels comfortable, worry-free and individually tailored to your unique needs.</p> 
+      <h1 className={style.handle_gentext}>Managed Detection & Response</h1>
+      <p class={style.handle_gentext}> Security leaders need a cost-effective solution that detects and prevents intrusions, malware and other malicious activity. They need access to the latest threat research and analytics to separate the real threats from the noise. And they need 24/7 security experts who continually monitor their environments for threats and know what to do when they arise.  With OneNeck's Managed Detection and Response service, organizations get the always-on support they need.</p> 
+      <p class={style.handle_gentext}> Security leaders need a cost-effective solution that detects and prevents intrusions, malware and other malicious activity. They need access to the latest threat research and analytics to separate the real threats from the noise. And they need 24/7 security experts who continually monitor their environments for threats and know what to do when they arise.</p> 
 
-          <h1 className={style.handle_gentext}>Consulting Services</h1>
-          <p class={style.handle_gentext}> Our cloud strategy and planning services include, but are not limited to, the following:</p> 
-          <ul className={style.bulletCol}>
-            <div className={style.columns}>
+    
+      <p class={style.handle_gentext}> Our cloud strategy and planning services include, but are not limited to, the following:</p> 
+      
+      <p class={style.handle_gentext}> ZiraSolutions has partnered with Symantec to provide Managed Detection and Response capabilities to stretched IT teams who need to protect their organizations against security breaches. We bring together a unique combination of Endpoint’s award-winning SaaS security platform and continuous threat research and analytics, with our combined teams of round-the-clock security experts.</p> 
 
-              <div className={style.col1}> 
-                <li className={style.bulletStyle}>Workload portfolio analysis</li>
-                <li className={style.bulletStyle}>Benchmarking</li>
-                <li className={style.bulletStyle}>Readiness</li>
-                <li className={style.bulletStyle}>Assessments</li>
-              </div>
+      <button className={style.consultButton}>Schedule a consultation</button>
 
-              <div className={style.col2 }> 
-                <li className={style.bulletStyle}>Data Management</li>
-                <li className={style.bulletStyle}>Architecture Design</li>
-                <li className={style.bulletStyle}>Total Cost of Ownership</li>
-                <li className={style.bulletStyle}>Risk Mitigation Strategy</li>
-              </div>
+      <div class={style.container_animation}>
+    <div class={style.col}>
+    <h3 class={style.left_title}>Years in buisness</h3> 
+      <img class={style.animation_icon} src={require("./images/biz_icon.png")}  alt="wifi"/>
+      <h3 class={style.bar_text}><CountUp  delay={2} end={15} /> +</h3>
+      
+    </div>
 
-              <div className={style.col3}> 
-                <li className={style.bulletStyle}>Business Case</li>
-                <li className={style.bulletStyle}>Change Readiness</li>
-                <li className={style.bulletStyle}>Deployment Roadmap</li>
-                <li className={style.bulletStyle}>Cost Management</li>
-              </div>
+    <div class={style.col}>
+    <h3 class={style.bar_text}>Team Members</h3>
+      <img class={style.animation_icon} src={require("./images/team_m.jpg")}  alt="wifi"/> 
+      <h3 class={style.bar_text}><CountUp delay={2} end={10} /> +</h3>
+      
+    </div>
 
-            </div> 
-          </ul>  
+    <div class={style.col}>
+      <h3 class={style.bar_text}>Finished Projects</h3> 
+      <img class={style.animation_icon} src={require("./images/projects.png")}  alt="wifi"/>
 
+      <h3 class={style.bar_text}><CountUp delay={2} end={350} /> +</h3>
+      
+    </div>
 
+    <div class={style.col}>
+      <h3 class={style.right_title}>Certificates</h3> 
+      <img class={style.animation_icon} src={require("./images/certificate.jpg")}  alt="wifi"/>
+      <h3 class={style.bar_text}><CountUp delay={2} end={15}/> +</h3>
+      
+    </div>
+  </div>
 
-          <p class={style.handle_gentext}> For businesses acclimatizing to or already in the cloud, our 24/7 help desk and self-service management solutions build enormous long-term value and ease of use into service packages. ZiraSoltuions removes the burden of troubleshooting and maintenance, by addressing IT concerns before they become IT problems.</p> 
-
-          <button className={style.consultButton}>Schedule a consultation</button>
-
-        <div class={style.container_animation}>
-
-          <div class={style.col}>
-            <h2 class={style.wht_txt}><CountUp  delay={2} end={63} /> %</h2>
-            <p class={style.container_textL}> Organizations believe that digital transformation is driven by cloud adoption</p> 
-          </div>
-
-          <div class={style.col}> 
-          <h2 class={style.wht_txt}><CountUp  delay={2} end={27} /> %</h2>
-            <p class={style.container_text}>Reduction in on-site work by joining the cloud</p> 
-            
-          </div>
-
-          <div class={style.col}>
-            <h2 class={style.wht_txt}><CountUp  delay={2} end={75} /> %</h2>
-            <p class={style.container_text}> Orginizations utilize a cloud-first strategy</p> 
-            
-          </div>
-
-          <div class={style.col}>
-             
-            <h2 class={style.wht_txt}><CountUp  delay={2} end={172} /></h2>
-            <p class={style.container_textR}> Customers have been migrated by Zira Solution Experts </p> 
-            
-          </div>
-      </div>
-
-        </article>
+    </article>
 
 
-      </section>
+  </section>
 
-    </body>
-
-
-    <footer className="footer_view">
-      <p>Footer</p>
-    </footer>
+</body>
 
 
-    </React.Fragment>
+<footer className="footer_view">
+  <p>Footer</p>
+</footer>
+
+
+</React.Fragment>
   );
 }
 

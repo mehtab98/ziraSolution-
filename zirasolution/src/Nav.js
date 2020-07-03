@@ -49,8 +49,8 @@ function Nav() {
 
       <ul className = "nav-links">  
       	
-      	<Link style={linkStyle} to='/about'>   
-      		<li style={navStyles}>About</li>
+      	<Link style={linkStyle} to='/about'>  
+          <button className="dropbtn">About</button> 
       	</Link> 
 
 

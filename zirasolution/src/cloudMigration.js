@@ -1,7 +1,6 @@
 import React from 'react';
 import CountUp from 'react-countup';
 import './css/App.css';
-
 import style from './css/genView.module.css';
 
 

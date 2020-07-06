@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Nav from './Nav'; 
-import About from './About';
+import About from './About.js';
 import Shop from './Shop'; 
 import Home from './Home';
 import Cloud from './Cloud';

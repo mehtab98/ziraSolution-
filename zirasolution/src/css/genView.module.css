@@ -54,6 +54,7 @@ section {
   padding: 20px;
 }
 
+
 /* Style the list inside the menu */
 .side_nav_ul{
   list-style-type: none;
@@ -70,13 +71,6 @@ section {
 }
 
 /* Style the footer */
-.footer_view{
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
 .handle_text{
   text-align: justify;
   text-indent: 3%; 
@@ -266,3 +260,41 @@ section {
   height: 300px;
   margin-left: 0px;
 }
+
+
+.footer_row {
+  padding: 0px;
+  top: 0px;
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.footer_column {
+  flex: 50%;
+  padding: 10px;
+  height: 165px; 
+}
+
+.footer_view{
+  background-color: #777;
+  top:0px;
+  padding: 0px;
+  text-align: center;
+  color: white;
+  height: auto; 
+  bottom: 0;
+}
+
+.link_stylez{
+  text-decoration: underline;
+  color: white;
+}
+
+.footer_links{
+  list-style-type: none;
+  text-align:left;
+  line-height: 25px;
+  color: white;
+  left: 0px;
+  padding: "0";
+};

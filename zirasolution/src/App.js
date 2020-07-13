@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Nav from './Nav'; 
+import Footer from './website_footer'; 
 import About from './About.js';
 import Shop from './Shop'; 
 import Home from './Home';
@@ -76,8 +77,10 @@ function App() {
         		<Route path = "/shop" component={Shop}/>
 
         	</Switch>  
-    	</div>
 
+			<Footer/>
+    	</div>
+		
     </Router> 
   );
 }

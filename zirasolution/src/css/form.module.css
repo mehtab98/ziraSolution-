@@ -7,41 +7,105 @@
 
 .h1_form{
  margin: 0;
- padding: 100px 0;
+ padding: 100px;
  font: 44px "Arial";
  color: white;
  text-align: center;
 }
-  
+
+
 .section_style{
     background-position:center;
-    display: flex;
-    margin-top: 123px;
+    max-width:1550px;
+    width: 900px;
+    border-style: solid;
+    color:  #ff6126;
+    margin-bottom: 100px;
 }
 
 
 .article_view{
- -webkit-flex: 1;
- -ms-flex: 1;
- flex: 1;
- background-color: #f1f1f1;
- padding: 10px;
+    width: 500px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 } 
+
+
+
+.form_view{
+    display: flex; 
+    flex-direction: column;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+} 
+
+
+.form_inputs{
+    justify-content: space-between; 
+    flex-direction: row;
+    align-items: center;
+}
+
+.input_style_l{
+    width: 250px;
+}
+.input_style{
+    width: 250px;
+    margin-left: 12%;
+}
+
+.input_left{
+    margin-left: 12%;
+}
+
+.button_size{
+    width: 200px;
+    height: 40px;
+    background-color:#f1f1f1;
+    margin-left: 40%;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
 body {
     background-color:#f1f1f1;
 }
 
 .BodyView{
-   margin-top: 0px;
-   vertical-align: top;
-   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.textbox_form{
+    height: 40px;
+    width: 605px;
+    margin-left: 16%;
+    margin-bottom: 10px;
+}
+
+
+.sub_form_titles{
+    text-align: left;
+    margin-left: 25px;
+}
+
+.sub_form_sec{
+    text-align: left;
+    margin-right: 25px;
+}
+
+.form_labels{
+    margin-left:0px;
 }
 
 .handle_gentext{
+    margin-top: 30px;
     text-align: left;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 30px;
 }
 
 
@@ -108,3 +172,18 @@ input[type=submit]:hover {
  background-color: #f2f2f2;
  padding: 20px;
 };
+
+.form_title{
+    margin-top: 0px;
+}
+
+
+.label_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: left;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}

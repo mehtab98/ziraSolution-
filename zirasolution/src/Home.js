@@ -102,11 +102,7 @@ class={styles.animation_icon} src={require("./images/certificate.jpg")}  alt="wi
 
       </div> 
     </body>
-
-    <footer class={styles.footer_view}>
-      <p>Footer</p>
-    </footer>
-    
+  
   </React.Fragment>
     
 

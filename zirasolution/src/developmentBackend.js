@@ -38,7 +38,7 @@ function developmentBackend() {
          
           <p class={style.handle_gentext}> NoSQL stands for Non-Relational Structure Query Language.NoSQL databases are increasingly used in big data and real-time web applications. NoSQL systems are also sometimes called "Not only SQL" to emphasize that they may support SQL-like query languages or sit alongside SQL databases in polyglot-persistent architectures.</p> 
         
-          <p class={style.handle_gentext}>Their are three benefts of integrating a NoSQL database.First its the simplicity of design, simpler "horizontal" scaling to clusters of machines. Secondly, it is more accurate of a database, as it provides finer control over availability and limiting the object-relational impedance mismatch.  Third, The data structures used by NoSQL databases, making some operations faster in NoSQL.</p> 
+          <p class={style.handle_gentext}>Their are three benefts of integrating a NoSQL database.First its the simplicity of design, simpler "horizontal" scaling to clusters of machines. Secondly, it is more accurate of a database, as it provides finer control over availability and limiting the object-relational impedance mismatch.  Third, The data structures used by NoSQL databases, making some operations faster in NoSQL. However, development time increases with NoSQL.</p> 
 
 
           <button className={style.consultButton}>Schedule a consultation</button>

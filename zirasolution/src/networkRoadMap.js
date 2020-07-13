@@ -4,7 +4,7 @@ import './css/App.css';
 
 import style from './css/columnView.module.css';
 import styles from './css/genView.module.css'; 
-import { lookup } from 'dns';
+
 function networkRoadMap() {
   return (
     <React.Fragment>

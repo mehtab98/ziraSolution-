@@ -31,13 +31,7 @@ function Nav() {
     borderRadius: "12px"
   };
 
-  const dropbtn={
-    backgroundColor: "#4CAF50",
-    color: "white",
-    padding: "16px",
-    fontSize: "16px",
-    border: "none"
-  };
+
   
 
   return (

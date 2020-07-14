@@ -111,7 +111,7 @@ header{
   background: #fff; 
   margin-top: 60px;
   box-shadow: 0 5px 15px rgba(0,0,0,.1);
-  width: auto; 
+  max-width: 1000px; 
   height: 175px; 
   display: flex;
   flex: 1; 
@@ -160,12 +160,45 @@ header{
   box-shadow: 0 5px 15px rgba(0,0,0,.1);
   display: flex;
   width: 1000px;
+  height: 250px;
   flex: 1; 
   flex-wrap: nowrap;
   justify-content: center;
-  
+  bottom: 60px;
 }
 
+.body_style{
+  align-items: center;
+}
+.container_slides{
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  align-items: center;
+  background: #fff; 
+  margin-top: 60px;
+  margin-bottom: 60px;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  width: 1000px;
+  flex: 1; 
+  flex-wrap: nowrap;
+}
+
+.test_design{
+  position: relative; 
+  width: 80px; 
+  height:80px; 
+  color: #fff; 
+  background: #000;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin: 0 auto; 
+  border-radius: 50%; 
+}
+.slide_design{
+  height: 250px; 
+  color: #fff;
+  justify-content: center;
+}
 .contactButton{
   background-color: #e7e7e7; 
   border: none;

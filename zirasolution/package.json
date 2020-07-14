@@ -18,6 +18,9 @@
     "react-responsive-carousel": "^3.2.9",
     "react-scripts": "3.4.1"
   },
+  "engines": {    
+    "npm": "6.x"  
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

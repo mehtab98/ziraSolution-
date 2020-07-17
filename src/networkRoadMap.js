@@ -5,6 +5,9 @@ import './css/App.css';
 import style from './css/columnView.module.css';
 import styles from './css/genView.module.css'; 
 
+
+import {Link} from 'react-router-dom';
+
 function networkRoadMap() {
   return (
     <React.Fragment>
@@ -64,9 +67,10 @@ agree on milestones to ensure a smooth process.</p>
             <p class={style.handle_gentext}>Our client service professionals will check in regularly becoming an extension of your team. They
 will stay updated on changes to your organization and provide a quarterly review of services to highlight benchmarks made from our roadmap</p>  
 
-
+        <Link  to='/shop' class={style.link_style}> 
           <button className={style.consultButton}>Schedule a consultation</button>
-
+        </Link>
+        
           <div class={styles.container_animation}>
         <div class={styles.col}>
         <h3 class={styles.left_title}>Years in buisness</h3> 

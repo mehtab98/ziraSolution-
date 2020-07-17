@@ -4,6 +4,9 @@ import './css/App.css';
 
 import style from './css/genView.module.css';
 
+
+import {Link} from 'react-router-dom';
+
 function developmentMobile() {
   return (
     <React.Fragment>
@@ -31,9 +34,10 @@ function developmentMobile() {
           <p class={style.handle_gentext}> Apple intended Swift to support many core concepts associated with Objective-C, notably dynamic dispatch, widespread late binding, extensible programming and similar features, but in a "safer" way, making it easier to catch software bugs; Swift has features addressing some common programming errors like null pointer dereferencing and provides syntactic sugar to help avoid the pyramid of doom. By utilizing swift, we can gurantee you will have a fully functioning app for iOS.</p> 
 
           <p class={style.handle_gentext}> Our in house mobile development team can specializes in Swift. With over a 100 million iOS users in America, this framework is perfect for any North American company.</p> 
-          
+        <Link  to='/shop' class={style.link_style}> 
           <button className={style.consultButton}>Schedule a consultation</button>
-
+        </Link> 
+        
         <div class={style.container_animation}>
 
           <div class={style.col}>

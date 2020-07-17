@@ -4,6 +4,9 @@ import './css/App.css';
 
 import style from './css/genView.module.css';
 
+
+import {Link} from 'react-router-dom';
+
 function networkStorage() {
   return (
     <React.Fragment>
@@ -30,9 +33,10 @@ function networkStorage() {
 
           <h1 className={style.handle_gentext}>Legacy Managed Storage</h1>
           <p class={style.handle_gentext}>With our intimate knowledge of HPE,3PAR, Netapps or IBM Storage suite, you can trust ZiraSolutions to keep your storage arrays up-to-date and working at peak performance, so you can focus on your core business initiatives.</p> 
-
-          <button className={style.consultButton}>Schedule a consultation</button>
-
+        
+          <Link  to='/shop' class={style.link_style}> 
+           <button className={style.consultButton}>Schedule a consultation</button>
+          </Link> 
           <div class={style.container_animation}>
         <div class={style.col}>
         <h3 class={style.left_title}>Years in buisness</h3> 

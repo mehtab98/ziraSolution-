@@ -4,6 +4,8 @@ import './css/App.css';
 
 import style from './css/genView.module.css';
 
+import {Link} from 'react-router-dom';
+
 function cloudArchitecture() {
   return (
     <React.Fragment>
@@ -63,7 +65,9 @@ function cloudArchitecture() {
 
           <p class={style.handle_gentext}> For businesses acclimatizing to or already in the cloud, our 24/7 help desk and self-service management solutions build enormous long-term value and ease of use into service packages. ZiraSoltuions removes the burden of troubleshooting and maintenance, by addressing IT concerns before they become IT problems.</p> 
 
-          <button className={style.consultButton}>Schedule a consultation</button>
+          <Link  to='/shop' class={style.link_style}> 
+            <button className={style.consultButton}>Schedule a consultation</button>
+          </Link> 
 
         <div class={style.container_animation}>
 

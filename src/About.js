@@ -4,6 +4,7 @@ import './css/App.css';
 
 
 
+import {Link} from 'react-router-dom';
 
 
 import style from './css/genView.module.css';
@@ -31,9 +32,9 @@ function About() {
 
           <p class={style.handle_gentext}> Whether it’s a classic mom or pop shop or the next Silicon Valley startup, we can help deploy new software or support your exisiting buisness.</p> 
           
-
-          <button className={style.consultButton}>Schedule a consultation</button>
-
+          <Link  to='/shop' class={style.link_style}> 
+            <button className={style.consultButton}>Schedule a consultation</button>
+          </Link>
         <div class={style.container_animation}>
 
           <div class={style.col}>

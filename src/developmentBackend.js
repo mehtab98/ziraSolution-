@@ -4,6 +4,8 @@ import './css/App.css';
 
 import style from './css/genView.module.css';
 
+import {Link} from 'react-router-dom';
+
 function developmentBackend() {
   return (
     <React.Fragment>
@@ -40,8 +42,9 @@ function developmentBackend() {
         
           <p class={style.handle_gentext}>Their are three benefts of integrating a NoSQL database.First its the simplicity of design, simpler "horizontal" scaling to clusters of machines. Secondly, it is more accurate of a database, as it provides finer control over availability and limiting the object-relational impedance mismatch.  Third, The data structures used by NoSQL databases, making some operations faster in NoSQL. However, development time increases with NoSQL.</p> 
 
-
+          <Link  to='/shop' class={style.link_style}> 
           <button className={style.consultButton}>Schedule a consultation</button>
+          </Link>
 
         <div class={style.container_animation}>
 

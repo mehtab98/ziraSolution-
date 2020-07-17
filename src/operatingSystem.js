@@ -4,6 +4,9 @@ import './css/App.css';
 
 import style from './css/genView.module.css';
 
+
+import {Link} from 'react-router-dom';
+
 function operatingSystem() {
   return (
     <React.Fragment>
@@ -70,9 +73,9 @@ that your investment will continue to pay dividends for many years to come.We al
             </div> 
           </ul>  
 
-
-          <button className={style.consultButton}>Schedule a consultation</button>
-
+          <Link  to='/shop'> 
+            <button className={style.consultButton}>Schedule a consultation</button>
+          </Link>
         <div class={style.container_animation}>
 
           <div class={style.col}>

@@ -4,6 +4,9 @@ import './css/App.css';
 
 import style from './css/genView.module.css';
 
+
+import {Link} from 'react-router-dom';
+
 function networkSecurity() {
 
   return (
@@ -33,9 +36,10 @@ function networkSecurity() {
       <p class={style.handle_gentext}> Our cloud strategy and planning services include, but are not limited to, the following:</p> 
       
       <p class={style.handle_gentext}> ZiraSolutions has partnered with Symantec to provide Managed Detection and Response capabilities to stretched IT teams who need to protect their organizations against security breaches. We bring together a unique combination of Endpoint’s award-winning SaaS security platform and continuous threat research and analytics, with our combined teams of round-the-clock security experts.</p> 
-
-      <button className={style.consultButton}>Schedule a consultation</button>
-
+      <Link  to='/shop' class={style.link_style}> 
+        <button className={style.consultButton}>Schedule a consultation</button>
+      </Link>
+      
       <div class={style.container_animation}>
         <div class={style.col}>
         <h3 class={style.left_title}>Years in buisness</h3> 

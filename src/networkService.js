@@ -4,6 +4,8 @@ import './css/App.css';
 
 import style from './css/genView.module.css';
 
+
+import {Link} from 'react-router-dom';
 function networkService() {
   return (
     <React.Fragment>
@@ -65,9 +67,10 @@ foundational infrastructures that support corporate growth.</p>
 
             </div> 
           </ul>  
-
+        
+        <Link  to='/shop' class={style.link_style}> 
           <button className={style.consultButton}>Schedule a consultation</button>
-
+        </Link>
         <div class={style.container_animation}>
 
           <div class={style.col}>

@@ -4,6 +4,8 @@ import './css/App.css';
 import style from './css/genView.module.css';
 
 
+import {Link} from 'react-router-dom';
+
 function cloudMigration() {
   return (
     <React.Fragment>
@@ -32,8 +34,9 @@ function cloudMigration() {
 
           <p class={style.handle_gentext}> With our cloud migration services, we can move your business to the cloud – quickly and efficiently. We offer a complete suite of AWS migration services, so your business receives the exact support and guidance required to function optimally. We build architectures based on a thorough analysis of your needs, while managing your workloads across the entire lifecycle, so you can reap maximum rewards from the AWS infrastructure.</p>
 
+          <Link to='/shop'> 
           <button className={style.consultButton}>Schedule a consultation</button>
-
+          </Link>
         <div class={style.container_animation}>
 
           <div class={style.col}>

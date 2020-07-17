@@ -4,6 +4,8 @@ import './css/App.css';
 
 import style from './css/genView.module.css';
 
+
+import {Link} from 'react-router-dom';
 function developmentWeb() {
   return (
     <React.Fragment>
@@ -40,8 +42,9 @@ function developmentWeb() {
           <h4 className={style.handle_gentext}>HTML</h4>
           <p class={style.handle_gentext}> HTML or Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. </p> 
           <p class={style.handle_gentext}> If you want a simple static website, we can design a project for you in HTML. All of our developers have mastered this language and can easily help bring your website designs to life with this standard frontend language.</p> 
-
-          <button className={style.consultButton}>Schedule a consultation</button>
+          <Link  to='/shop' class={style.link_style}> 
+            <button className={style.consultButton}>Schedule a consultation</button>
+          </Link>
 
         <div class={style.container_animation}>
 

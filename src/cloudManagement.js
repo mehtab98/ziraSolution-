@@ -4,6 +4,8 @@ import './css/App.css';
 
 import style from './css/genView.module.css';
 
+import {Link} from 'react-router-dom';
+
 function cloudManagement() {
   return (
     <React.Fragment>
@@ -29,8 +31,9 @@ function cloudManagement() {
           <p class={style.handle_gentext}>For these users, a better option may be managed private cloud services, which offer an elevated level of service and greatly enhanced security.</p> 
 
 
-
-          <button className={style.consultButton}>Schedule a consultation</button>
+          <Link  to='/shop' class={style.link_style}> 
+            <button className={style.consultButton}>Schedule a consultation</button>
+          </Link>
 
         <div class={style.container_animation}>
 

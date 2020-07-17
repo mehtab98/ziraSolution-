@@ -105,12 +105,6 @@ will stay updated on changes to your organization and provide a quarterly review
 
     </body>
 
-
-    <footer className="footer_view">
-      <p>Footer</p>
-    </footer>
-
-
     </React.Fragment>
   );
 }

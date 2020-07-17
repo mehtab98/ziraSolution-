@@ -65,12 +65,6 @@ function cloudManagement() {
       </section>
 
     </body>
-
-
-    <footer className="footer_view">
-      <p>Footer</p>
-    </footer>
-
     </React.Fragment>
   );
 }

@@ -102,12 +102,6 @@ foundational infrastructures that support corporate growth.</p>
 
     </body>
 
-
-    <footer className="footer_view">
-      <p>Footer</p>
-    </footer>
-
-
     </React.Fragment>
   );
 }

@@ -112,7 +112,7 @@ header{
   margin-top: 60px;
   box-shadow: 0 5px 15px rgba(0,0,0,.1);
   max-width: 1000px; 
-  height: 175px; 
+  height: 200px; 
   display: flex;
   flex: 1; 
   flex-wrap: nowrap;
@@ -221,12 +221,92 @@ header{
   margin-right: 30px;
 }
 
-
-/* Style the footer */
 .footer_view{
   background-color: #777;
   padding: 10px;
   width: 100%;
   text-align: center;
   color: white;
+}
+
+.finesse{
+  display: flex; 
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  margin: 40px auto; 
+  height: 200px;
+  max-width: 950px; 
+}
+
+.finesse_p{
+  text-align: center; 
+  margin-bottom: 20px;
+  color:black;
+}
+
+
+.span_view{
+  display: flex; 
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center; 
+  cursor: pointer;  
+}
+
+.render{
+  display: flex; 
+  align-items:center
+}
+
+.render_larger{
+  display: flex; 
+  align-items:center;
+}
+ 
+.render_left{
+  margin-left: 70px;
+}
+
+ 
+.render_mid{
+  margin-left: 55px;
+}
+.render_third{
+  margin-left: 58px;
+}
+span{
+  height:20px; 
+  width:20px; 
+  margin:0 3px; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  cursor: pointer;
+  flex-direction: column;
+  background-color:white;
+  
+}
+
+span::before{
+  display: flex; 
+  flex-direction: column;
+  width: 6px; 
+  height: 6px;
+  content:"";
+  background-color:#777;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+span:hover::before{
+  display: flex; 
+  flex-direction: column;
+  background-color: #777
+}
+
+span[data-review="${active}"]::before{
+  display: flex; 
+  flex-direction: column;
+  background-color: #45454d;
 }

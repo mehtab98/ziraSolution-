@@ -1,14 +1,54 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import CountUp from 'react-countup';
 import { Carousel } from "react-responsive-carousel"; 
-
-
 import './css/App.css';
-import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
+import view_r from './slides_create.js'; 
 import style from './css/home.module.css';
+
+//to inline style css
+import { jsx, css } from '@emotion/core'
+
 
 import {Link} from 'react-router-dom'
 function Home() {
+
+  const reviews = { 
+    0:{
+      name: "Jonathan D.",
+      quote:
+        "Door.com has been great. I feel like I got to work with a specialist at each point in the process. Everyone was very professional and very helpful. Plus, I'm amazed at the flat-fee for the sale! Great way to save at closing. Door.com has been great. I feel like I got to work with a specialist at each point in the process. Everyone was very professional and very helpful. Plus, I'm amazed at the flat-fee for the sale! Great way to save at closing."
+    },
+   1:{
+      name: "Peter C.",
+      quote:
+        "I have bought and sold ten homes. This has been the most rewarding experience of them all. True professionalism and insight as well as great customer service makes me a believer in the Door.com business model."
+    },
+   2:{
+      name: "Paulette H.",
+      quote:
+        "The entire experience from onboarding to the sale of our home has been professional, expedited quickly, and I saved close to $14,000 in commissions. I will absolutely be using Door.com for the sale of my next property."
+    },
+  3:{
+      name: "Ryan W.",
+      quote:
+        "Service was excellent EVERY step of the process! No way to tell that Door.com provided a flat rate service by the way that they treated us and handled every step of the transactions."
+    },
+   4:{
+      name: "Kevin R.",
+      quote:
+        "Everyone we worked with was very responsive, professional and easy to work with. A great experience all around. I work in this industry too so my expectations are high. Great work by all."
+    }
+};
+
+  const [current, setCurrent] = useState(reviews[0]);
+
+  const[active, setActive] = useState(0)
+
+  const handleSetClick = (event) => {
+    setCurrent(reviews[event.target.getAttribute("data-review")])
+    setActive(event.target.getAttribute("data-review"))
+  }
+
   return (
     <React.Fragment>
   	<header className={style.header_1}>     
@@ -67,48 +107,63 @@ function Home() {
         <div class={style.col}>
         <h3 class={style.left_title}>Years in buisness</h3> 
           <img class={style.animation_icon} src={require("./images/biz_icon.png")}  alt="wifi"/>
-          <h3><CountUp  delay={2} end={15} /> +</h3>
-          
+          <div class={style.render_left}> 
+            <h3 class={style.render}><CountUp  delay={2} end={15} />+</h3>
+          </div>
         </div>
 
         <div class={style.col}>
         <h3>Team Members</h3>
           <img class={style.animation_icon} src={require("./images/team_m.jpg")}  alt="wifi"/> 
-          <h3><CountUp delay={2} end={10} /> +</h3>
-          
+          <div class={style.render_mid}> 
+          <h3 class={style.render}><CountUp delay={2} end={10} />+</h3>
+          </div> 
         </div>
 
         <div class={style.col}>
           <h3>Finished Projects</h3> 
           <img class={style.animation_icon} src={require("./images/projects.png")}  alt="wifi"/>
-
-          <h3><CountUp delay={2} end={350} /> +</h3>
-          
+          <div class={style.render_mid}> 
+            <h3 class={style.render}><CountUp delay={2} end={350 }/> +</h3>
+          </div>
         </div>
 
         <div class={style.col}>
           <h3 class={style.right_title}>Certificates</h3> 
           <img 
 class={style.animation_icon} src={require("./images/certificate.jpg")}  alt="wifi"/>
-          <h3><CountUp delay={2} end={15}/> +</h3>
-          
+          <div class={style.render_mid}>
+            <h3 class={style.render}><CountUp delay={2} end={15}/>+</h3>
+          </div> 
         </div>
       </div>
 
+
+
+    <div class={style.finesse}>
+        
+        <p class={style.finesse_p}>{current.quote}</p>
+        <p class={style.finesse_p}>{current.name}</p>
+
+        <div class={style.span_view}>
+
+            {Object.keys(reviews).map(index => (
+                <span 
+                  class={style.span_view}
+                  onClick={event => handleSetClick(event)}
+                  data-review={index}
+                  key={index}
+                  
+                />
+            ))}
+       </div>
+        
+
+    </div> 
       
+    </div> 
 
-      <div class={style.container_slides}>
-        <Carousel showThumbs={false} infiniteLoop={true}>
-          <div class={style.slide_design}><img class={style.test_design} src={require("./images/cloud_icon_zira.png")}  alt="cloud"/></div>
-          <div class={style.slide_design}>this is slide 2</div>
-          <div class={style.slide_design}>this is slide 3</div>
-      </Carousel>
-      </div>
-
-      </div> 
-      <br></br>
-      <br></br>
-    </body>
+  </body>
   
   </React.Fragment>
     

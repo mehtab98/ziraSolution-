@@ -45,7 +45,7 @@ section {
 }
 
 .head_left{
-  transform: translate(-40%, -20%);
+  transform: translate(-28%, -20%);
 }
 
 .hero_text_net_t{
@@ -100,7 +100,7 @@ section {
   -ms-flex: 3;
   flex: 3;
   background-color: #f1f1f1;
-  max-width: 1400px; 
+  max-width: 1300px; 
 }
 
 .finesse{
@@ -157,6 +157,8 @@ section {
   font-size: 16px;
   border-radius: 12px;
   width: 250px;
+  margin-top: 30px; 
+  margin-bottom: 30px;
 }
 
 .container_animation{
@@ -170,6 +172,7 @@ section {
   flex: 1; 
   flex-wrap: nowrap;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .container_textL{

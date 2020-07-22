@@ -8,8 +8,18 @@ nav{
   align-items: center;
   min-height: 10vh; 
   background: rgb(73,79, 82);
+  background-color:  rgb(73,79, 82);
   color: white; 
+  min-width: 200vh;
 } 
+
+ul{
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+}
+
 
 .nav-links{
   width: 50%;
@@ -64,11 +74,12 @@ nav{
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: orange;}
 
-.dropbtn:hover {background-color: #3e8e41;} 
+.dropbtn:hover {background-color: orange;} 
 
-.contactButton{background-color: #3e8e41;}
+.contactButton:hover {background-color:orange;}
+
 
 
 @keyframes App-logo-spin {

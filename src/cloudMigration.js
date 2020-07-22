@@ -13,7 +13,7 @@ function cloudMigration() {
       <img src={require("./images/sf_fog.jpg")}  alt="fog over the bay"/>
       <div class={style.hero_text_net}>
         <h1>Cloud Migration</h1>
-        <p> Cloud migration may seem like a daunting task for companies accustomed to traditional data management, but it doesn’t have to be. Getting to the cloud seamlessly starts with the right partner. Rely on us to manage and maximize your cloud platform’s value, so that you can focus more on continuing to grow your business.</p> 
+        <p> Cloud migration may seem like a daunting task for companies accustomed to traditional data management, but it doesn’t have to be.</p> 
       </div>
     </header>
 
@@ -22,7 +22,7 @@ function cloudMigration() {
       <section>
 
         <article className={style.article_view}>
-          <p class={style.handle_gentext}> Our cloud migration services handle the entire lifecycle with ease—offering a comprehensive solution for getting your business to the cloud, so you can start reaping the rewards of cloud infrastructure right away.</p> 
+          <p class={style.handle_gentext}> Our cloud migration services handle the entire lifecycle with ease—offering a comprehensive solution for getting your business to the cloud, so you can start reaping the rewards of cloud infrastructure right away. Getting to the cloud seamlessly starts with the right partner. Rely on us to manage and maximize your cloud platform’s value, so that you can focus more on continuing to grow your business.</p> 
             
           <p class={style.handle_gentext}> Individual architecture built around our experts’ thorough analysis of your specific needs ensures your business derives the exact services required to function optimally, while remaining readily able to adapt to growth. In the short-term, our cloud services make it easy to execute, from a simple “lift and shift” of your business, to the migration and modernization of your applications and systems.</p>
 

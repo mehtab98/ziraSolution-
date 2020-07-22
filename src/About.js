@@ -31,31 +31,36 @@ function About() {
           <Link  to='/shop' class={style.link_style}> 
             <button className={style.consultButton}>Schedule a consultation</button>
           </Link>
-        <div class={style.container_animation}>
 
-          <div class={style.col}>
-            <h2 class={style.wht_txt}><CountUp  delay={2} end={63} /> %</h2>
-            <p class={style.container_textL}> Organizations believe that digital transformation is driven by cloud adoption</p> 
-          </div>
+      <div class={style.container_animation}>
+        <div class={style.col}>
+        <h3 class={style.left_title}>Years in buisness</h3> 
+          <img class={style.animation_icon} src={require("./images/biz_icon.png")}  alt="wifi"/>
+          <h3 class={style.bar_text}><CountUp  delay={2} end={15} /> +</h3>
+          
+        </div>
 
-          <div class={style.col}> 
-          <h2 class={style.wht_txt}><CountUp  delay={2} end={27} /> %</h2>
-            <p class={style.container_text}>Reduction in on-site work by joining the cloud</p> 
-            
-          </div>
+        <div class={style.col}>
+        <h3 class={style.bar_text}>Team Members</h3>
+          <img class={style.animation_icon} src={require("./images/team_m.jpg")}  alt="wifi"/> 
+          <h3 class={style.bar_text}><CountUp delay={2} end={10} /> +</h3>
+          
+        </div>
 
-          <div class={style.col}>
-            <h2 class={style.wht_txt}><CountUp  delay={2} end={75} /> %</h2>
-            <p class={style.container_text}> Orginizations utilize a cloud-first strategy</p> 
-            
-          </div>
+        <div class={style.col}>
+          <h3 class={style.bar_text}>Finished Projects</h3> 
+          <img class={style.animation_icon} src={require("./images/projects.png")}  alt="wifi"/>
 
-          <div class={style.col}>
-             
-            <h2 class={style.wht_txt}><CountUp  delay={2} end={172} /></h2>
-            <p class={style.container_textR}> Customers have been migrated by Zira Solution Experts </p> 
-            
-          </div>
+          <h3 class={style.bar_text}><CountUp delay={2} end={350} /> +</h3>
+          
+        </div>
+
+        <div class={style.col}>
+          <h3 class={style.right_title}>Certificates</h3> 
+          <img class={style.animation_icon} src={require("./images/certificate.jpg")}  alt="wifi"/>
+          <h3 class={style.bar_text}><CountUp delay={2} end={15}/> +</h3>
+          
+        </div>
       </div>
 
         </article>

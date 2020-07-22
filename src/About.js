@@ -12,18 +12,14 @@ import style from './css/genView.module.css';
 function About() {
   return (
     <React.Fragment>
-  	<header className={style.header_views}>     
-    <img src={require("./images/about_page.jpeg")}  alt="fog over the bay"/>
-      <div class={style.hero_text_net}>
-        <h1>About Us</h1>
-        <p>Learn more about how we enable and deliver new paths of growth.</p> 
+  	<header className={style.header1}>     
+      <img className={style.background_pic} src={require("./images/about_us.jpg")}  alt="fog over the bay"/>
+      <div class={style.hero_text_net_t}>
       </div>
     </header>
-
+    <h1 class={style.head_left}>About Us</h1>
     <body className={style.BodyView}>
-
       <section>
-        
         <article className={style.article_view}>
           <p class={style.handle_gentext}> Zira Solutions promises you the right expertise and an unrelenting commitment to manage your technology services, there is nothing we take more importantly than providing an exceptional service experience. Through every interaction with our clients, our team truly cares and is passionate about building long-term relationship. We take the responsibility that comes with managing your IT systems and hope to drive your business forward. When you work with Zira Solutions, you are part of our family.</p> 
 

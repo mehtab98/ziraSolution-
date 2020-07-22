@@ -17,6 +17,7 @@ header{
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
+  
   position: absolute;
   width: 100%; 
   display: flex;
@@ -160,7 +161,7 @@ header{
   box-shadow: 0 5px 15px rgba(0,0,0,.1);
   display: flex;
   width: 1000px;
-  height: 250px;
+  height: 200px;
   flex: 1; 
   flex-wrap: nowrap;
   justify-content: center;
@@ -236,12 +237,14 @@ header{
   align-items: center;
   margin: 40px auto; 
   height: 200px;
-  max-width: 950px; 
+  max-width: 1000px; 
 }
 
 .finesse_p{
   text-align: center; 
   margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
   color:black;
 }
 
@@ -272,10 +275,26 @@ header{
 .render_mid{
   margin-left: 55px;
 }
-.render_third{
-  margin-left: 58px;
+.render_mid_300{
+  margin-left: 75px;
+  display: flex; 
+  align-items:center;
+  
 }
-span{
+
+.render_third{
+  
+  margin-left: 58px;
+  display: flex; 
+  align-content: space-around;
+}
+
+.plus_pushed{
+  display:inline;
+  width:30px;
+}
+
+.span_view{
   height:20px; 
   width:20px; 
   margin:0 3px; 
@@ -283,12 +302,13 @@ span{
   justify-content: center; 
   align-items: center;
   cursor: pointer;
-  flex-direction: column;
+  flex-direction: row;
   background-color:white;
-  
+  position: sticky;
+  margin-bottom: 10px;
 }
 
-span::before{
+.span_view::before{
   display: flex; 
   flex-direction: column;
   width: 6px; 
@@ -297,15 +317,17 @@ span::before{
   background-color:#777;
   border-radius: 50%;
   transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  position: sticky;
 }
 
-span:hover::before{
+.span_view:hover::before{
   display: flex; 
   flex-direction: column;
   background-color: #777
 }
 
-span[data-review="${active}"]::before{
+.span_view[data-review="${active}"]::before{
   display: flex; 
   flex-direction: column;
   background-color: #45454d;

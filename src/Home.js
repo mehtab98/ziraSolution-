@@ -103,7 +103,7 @@ function Home() {
 
       </div>
 
-       <div class={style.container_animation}>
+      <div class={style.container_animation}>
         <div class={style.col}>
         <h3 class={style.left_title}>Years in buisness</h3> 
           <img class={style.animation_icon} src={require("./images/biz_icon.png")}  alt="wifi"/>
@@ -123,9 +123,12 @@ function Home() {
         <div class={style.col}>
           <h3>Finished Projects</h3> 
           <img class={style.animation_icon} src={require("./images/projects.png")}  alt="wifi"/>
-          <div class={style.render_mid}> 
-            <h3 class={style.render}><CountUp delay={2} end={350 }/> +</h3>
+
+          <div class={style.render_third}> 
+            <h3><CountUp delay={2} end={350}/></h3> 
+            <h3 class={style.plus_pushed}>+</h3>
           </div>
+          
         </div>
 
         <div class={style.col}>

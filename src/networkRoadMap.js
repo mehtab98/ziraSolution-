@@ -3,8 +3,8 @@ import CountUp from 'react-countup';
 import './css/App.css';
 
 import style from './css/columnView.module.css';
-import styles from './css/genView.module.css'; 
-
+import styles from './css/genView.module.css';
+import stylez from './css/home.module.css';
 
 import {Link} from 'react-router-dom';
 
@@ -23,7 +23,7 @@ function networkRoadMap() {
 
       <section>
         
-        <article className={style.article_view}>
+        <article className={styles.article_view}>
         <h1 className={style.handle_gentext}>Step 1: Assessment</h1>
           <p class={style.handle_gentext}> We take the time to learn your business needs. To become a strong business partner for your
 organization, we explore the following questions:</p>
@@ -67,43 +67,38 @@ agree on milestones to ensure a smooth process.</p>
             <p class={style.handle_gentext}>Our client service professionals will check in regularly becoming an extension of your team. They
 will stay updated on changes to your organization and provide a quarterly review of services to highlight benchmarks made from our roadmap</p>  
 
-        <Link  to='/shop' class={style.link_style}> 
-          <button className={style.consultButton}>Schedule a consultation</button>
-        </Link>
-        
-          <div class={styles.container_animation}>
-        <div class={styles.col}>
-        <h3 class={styles.left_title}>Years in buisness</h3> 
-          <img class={styles.animation_icon} src={require("./images/biz_icon.png")}  alt="wifi"/>
-          <h3 class={styles.bar_text}><CountUp  delay={2} end={15} /> +</h3>
+        <div class={style.container_about}>
+        <div class={stylez.inner_alignment}> 
+            <div class={style.col}>
+            <img class={stylez.animation_icon} src={require("./images/biz_icon.png")}  alt="wifi"/>
+              <h3 class={stylez.bar_text}><CountUp  delay={2} end={15} /> +</h3>
+              <h3 class={stylez.container_text}>Years in buisness</h3> 
+            </div>
+
+            <div class={style.col}>
+            <img class={stylez.animation_icon} src={require("./images/team_m.jpg")}  alt="wifi"/> 
+             <h3 class={stylez.bar_text}><CountUp delay={2} end={10} /> +</h3>
+             <h3 class={stylez.container_text}>Team Members</h3>
           
+            </div>
+            <div class={style.col}>
+              <img class={stylez.animation_icon} src={require("./images/projects.png")}  alt="wifi"/>
+              <h3 class={stylez.bar_text}><CountUp delay={2} end={350} /> +</h3>
+              <h3 class={stylez.container_text}>Finished Projects</h3> 
+            </div>
+            <div class={style.col}> 
+             <img class={stylez.animation_icon} src={require("./images/certificate.jpg")}  alt="wifi"/>
+             <h3 class={stylez.bar_text}><CountUp delay={2} end={15}/> +</h3>
+             <h3 class={stylez.container_text}>Certificates</h3> 
+            </div>
         </div>
+      </div> 
 
-        <div class={styles.col}>
-        <h3 class={styles.bar_text}>Team Members</h3>
-          <img class={styles.animation_icon} src={require("./images/team_m.jpg")}  alt="wifi"/> 
-          <h3 class={styles.bar_text}><CountUp delay={2} end={10} /> +</h3>
-          
-        </div>
-
-        <div class={styles.col}>
-          <h3 class={styles.bar_text}>Finished Projects</h3> 
-          <img class={styles.animation_icon} src={require("./images/projects.png")}  alt="wifi"/>
-
-          <h3 class={styles.bar_text}><CountUp delay={2} end={350} /> +</h3>
-          
-        </div>
-
-        <div class={styles.col}>
-          <h3 class={styles.right_title}>Certificates</h3> 
-          <img class={styles.animation_icon} src={require("./images/certificate.jpg")}  alt="wifi"/>
-          <h3 class={styles.bar_text}><CountUp delay={2} end={15}/> +</h3>
-          
-        </div>
-      </div>
-
-        </article>
-
+      </article>
+      
+      <Link  to='/shop' class={styles.link_style}> 
+            <button className={styles.consultButton}>Schedule a consultation</button>
+      </Link>
 
       </section>
 

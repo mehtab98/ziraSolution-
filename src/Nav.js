@@ -31,9 +31,6 @@ function Nav() {
     borderRadius: "12px"
   };
 
-
-  
-
   return (
     <nav>
 

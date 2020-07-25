@@ -16,16 +16,13 @@ function website_footer() {
           
           <div class={style.footer_column}>
             <h4 class={style.handle_text}>Contact Information</h4>
-            <ul class={style.footer_links}> 
-                <li> 2570 North First Street,</li>
-                <li> San Jose, CA 95131 </li>
-                <li> TEL: (650) 206-4009 </li>
-            </ul> 
-      
+            <p class={style.handle_text}>2570 North First Street, Suite #200</p> 
+            <p class={style.handle_text}> San Jose, CA 95131</p>
+            <p class={style.handle_text}> TEL: (650) 206-4009</p>
           </div>
 
           <div class={style.footer_column}> 
-            <h4 class={style.handle_text}>Quick Links</h4>
+            <h4 class={style.handle_text_r}>Quick Links</h4>
             <ul class={style.footer_links}>
               <Link  to='/shop'>
                 <li class={style.link_stylez}>Contact Us</li>

@@ -13,7 +13,6 @@ function cloudMigration() {
       <img src={require("./images/sf_fog.jpg")}  alt="fog over the bay"/>
       <div class={style.hero_text_net}>
         <h1>Cloud Migration</h1>
-        <p> Cloud migration may seem like a daunting task for companies accustomed to traditional data management, but it doesn’t have to be.</p> 
       </div>
     </header>
 
@@ -22,7 +21,7 @@ function cloudMigration() {
       <section>
 
         <article className={style.article_view}>
-          <p class={style.handle_gentext}> Our cloud migration services handle the entire lifecycle with ease—offering a comprehensive solution for getting your business to the cloud, so you can start reaping the rewards of cloud infrastructure right away. Getting to the cloud seamlessly starts with the right partner. Rely on us to manage and maximize your cloud platform’s value, so that you can focus more on continuing to grow your business.</p> 
+          <p class={style.handle_gentext}> Cloud migration may seem like a daunting task for companies accustomed to traditional data management, but it doesn’t have to be. Our cloud migration services handle the entire lifecycle with ease—offering a comprehensive solution for getting your business to the cloud, so you can start reaping the rewards of cloud infrastructure right away. Getting to the cloud seamlessly starts with the right partner. Rely on us to manage and maximize your cloud platform’s value, so that you can focus more on continuing to grow your business.</p> 
             
           <p class={style.handle_gentext}> Individual architecture built around our experts’ thorough analysis of your specific needs ensures your business derives the exact services required to function optimally, while remaining readily able to adapt to growth. In the short-term, our cloud services make it easy to execute, from a simple “lift and shift” of your business, to the migration and modernization of your applications and systems.</p>
 
@@ -34,40 +33,34 @@ function cloudMigration() {
 
           <p class={style.handle_gentext}> With our cloud migration services, we can move your business to the cloud – quickly and efficiently. We offer a complete suite of AWS migration services, so your business receives the exact support and guidance required to function optimally. We build architectures based on a thorough analysis of your needs, while managing your workloads across the entire lifecycle, so you can reap maximum rewards from the AWS infrastructure.</p>
 
-          <Link to='/shop'> 
-          <button className={style.consultButton}>Schedule a consultation</button>
-          </Link>
-        <div class={style.container_animation}>
-
+          <div class={style.container_animation}>
+        <div class={style.inner_alignment}> 
           <div class={style.col}>
             <h2 class={style.wht_txt}><CountUp  delay={2} end={63} /> %</h2>
-            <p class={style.container_textL}> Organizations believe that digital transformation is driven by cloud adoption</p> 
+            <p class={style.container_text}> of customers believe  cloud adoption is transformational</p> 
           </div>
-
-          <div class={style.col}> 
-          <h2 class={style.wht_txt}><CountUp  delay={2} end={27} /> %</h2>
-            <p class={style.container_text}>Reduction in on-site work by joining the cloud</p> 
-            
+          <div class={style.col}>
+            <h2 class={style.wht_txt}><CountUp  delay={2} end={172} /></h2>
+            <p class={style.container_text}> Clients have been migrated by Zira Solution Experts</p> 
           </div>
-
           <div class={style.col}>
             <h2 class={style.wht_txt}><CountUp  delay={2} end={75} /> %</h2>
-            <p class={style.container_text}> Orginizations utilize a cloud-first strategy</p> 
-            
+            <p class={style.container_text}> U.S. corporations utilize a cloud-first strategy</p> 
           </div>
-
-          <div class={style.col}>
-             
-            <h2 class={style.wht_txt}><CountUp  delay={2} end={172} /></h2>
-            <p class={style.container_textR}> Customers have been migrated by Zira Solution Experts </p> 
-            
+          <div class={style.col}> 
+            <h2 class={style.wht_txt}><CountUp  delay={2} end={27} /> %</h2>
+            <p class={style.container_text}>of Reduction in on-site work is done by joining the cloud</p> 
           </div>
       </div>
+      </div> 
+      </article>
 
-        </article>
-
+      <Link  to='/shop' class={style.link_style}> 
+            <button className={style.consultButton}>Schedule a consultation</button>
+      </Link>
 
       </section>
+
 
     </body>
 

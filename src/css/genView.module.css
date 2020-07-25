@@ -31,8 +31,12 @@
 section {
   display: -webkit-flex;
   display: flex;
+  flex-direction: column;
 }
 
+.side_bar_section{
+  display: flex;
+}
   /* Place text in the middle of the image */
 .hero_text_net {
   text-align: center;
@@ -46,6 +50,7 @@ section {
 
 .head_left{
   transform: translate(-28%, -20%);
+  color: #123c69;
 }
 
 .hero_text_net_t{
@@ -60,7 +65,18 @@ section {
   vertical-align: top;
   box-sizing: border-box;
 }
+
+.BodyView_gen{
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
   
+.general_link{
+  text-decoration: none;
+}
+.learn_more{
+  color:black;
+}
 .container{
   display: flex;
   flex-wrap: wrap;
@@ -80,19 +96,46 @@ section {
   
 /* Create two columns/boxes that floats next to each other */
 .side_nav{
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
   background: #ccc;
+  margin: 0;
   padding: 20px;
+  width: 30px;
+  display: flex; 
+  flex-direction: row; 
 }
 
+.overview_title{
+  font-size: 70px;
+  transform: translate(-300px, 20);
+}
 
 /* Style the list inside the menu */
 .side_nav_ul{
   list-style-type: none;
-  line-height:700%;
   padding: 0;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  background-color: #f1f1f1;
+  height: 100%;
+  overflow: auto;
+}
+
+.content{
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+  width: 1000px;
+}
+
+.article_view_gen{
+  display: flex; 
+  flex-direction: column; 
+  background-color: #f1f1f1;
+  max-width: 100px; 
 }
 
 .article_view{
@@ -101,6 +144,14 @@ section {
   flex: 3;
   background-color: #f1f1f1;
   max-width: 1300px; 
+}
+
+.article_view_over{
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  max-width: 900px; 
 }
 
 .finesse{
@@ -116,8 +167,6 @@ section {
 .handle_text{
   text-align: justify;
   text-indent: 2%; 
-  margin-left: 30px;
-  margin-right: 30px;
 }
 
 
@@ -127,12 +176,32 @@ section {
   margin-left: 30px;
   margin-right: 30px;
 }
+.handle_genblue{
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #123c69;
+}
+
+.handle_genblue_big{
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #123c69;
+  font-size:25px;
+}
 
 .handle_title{
   text-align: justify;
   left: 12%;
 }
 
+.handle_title_overview{
+  color: #123c69;
+  text-align: justify;
+  left: 12%;
+  font-size: 25px;
+}
 .navButtons{
   background-color: #e7e7e7; 
   border: none;
@@ -147,7 +216,7 @@ section {
 } 
 
 .consultButton{
-  background-color: rgb(73,79, 82); 
+  background-color:#123c69; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -161,27 +230,32 @@ section {
   margin-bottom: 30px;
 }
 
-.container_animation{
-  
-  background: rgb(73,79, 82); 
-  margin-top: 60px;
-  box-shadow: 0 5px 15px rgba(0,0,0,.1);
-  width: auto px; 
-  height: 200px; 
-  display: flex;
+.inner_alignment{
   flex: 1; 
   flex-wrap: nowrap;
+  display: flex;
   justify-content: space-between;
+}
+
+.container_animation{ 
+  display: inline-block;
+  text-align: left;
+  align-items: center;
+  background:  #f1f1f1; 
+  padding: 10px;
+  margin-top: 60px;
+  width: 900px; 
+  height: 200px; 
   margin-bottom: 30px;
 }
 
 .container_textL{
   left: 10px;
   position: relative; 
-  width: 150px; 
-  height:90px; 
-  color: #fff; 
-  background: rgb(73,79, 82);
+  width: 100px; 
+  height:100px; 
+  color: #123c69; 
+  background: #f1f1f1;
   display: flex; 
   justify-content: center; 
   align-items: center;
@@ -191,10 +265,10 @@ section {
 .container_textR{
   right: 10px;
   position: relative; 
-  width: 150px; 
-  height:90px; 
-  color: #fff; 
-  background: rgb(73,79, 82);
+  width: 100px; 
+  height:100px; 
+  color: #123c69; 
+  background: #f1f1f1;
   display: flex; 
   justify-content: center; 
   align-items: center;
@@ -202,22 +276,27 @@ section {
 }
 
 .wht_txt{
-  color:white;
+  transform: translate(28%, 0%);
+  color:#123c69;
   display: flex; 
   align-items:center;
   size: 12px;
+
 }
 
 .container_text{
+  font-weight: bold;
   position: relative; 
   width: 150px; 
-  height:90px; 
-  color: #fff; 
-  background: rgb(73,79, 82);
+  font-size: auto;
+  height:70px; 
+  color: #123c69; 
+  background: #f1f1f1;
   display: flex; 
   justify-content: center; 
-  align-items: center;
+  align-items: flex-start;
   margin: 0 auto;  
+  text-align: left;
 }
 
 .bulletCol{
@@ -235,6 +314,10 @@ section {
 .bulletStyle{
   list-style-type: none;
   color:black;
+  text-align: left;
+  margin-left: 100px;
+
+
 }
 
 .col1{
@@ -352,7 +435,4 @@ section {
   color: white;
   left: 0px;
   padding: "0";
-};
-
-
-
+}

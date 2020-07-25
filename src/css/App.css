@@ -7,8 +7,8 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height: 10vh; 
-  background: rgb(73,79, 82);
-  background-color:  rgb(73,79, 82);
+  background: #123c69;
+  background-color:  #123c69;
   color: white; 
   min-width: 200vh;
 } 
@@ -42,7 +42,7 @@ ul{
 } 
 
 .dropbtn {
-  background-color: rgb(73,79, 82);
+  background-color: #123c69;
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -74,11 +74,11 @@ ul{
 
 .dropdown:hover .dropdown-content {display: block;}
 
-.dropdown:hover .dropbtn {background-color: orange;}
+.dropdown:hover .dropbtn {background-color: #777;}
 
-.dropbtn:hover {background-color: orange;} 
+.dropbtn:hover {background-color: #777;} 
 
-.contactButton:hover {background-color:orange;}
+.contactButton:hover {background-color:#777;}
 
 
 

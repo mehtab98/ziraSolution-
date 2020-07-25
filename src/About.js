@@ -6,7 +6,7 @@ import './css/App.css';
 
 import {Link} from 'react-router-dom';
 
-
+import styles from './css/home.module.css';
 import style from './css/genView.module.css';
 
 function About() {
@@ -28,45 +28,41 @@ function About() {
 
           <p class={style.handle_gentext}> Whether it’s a classic mom or pop shop or the next Silicon Valley startup, we can help deploy new software or support your exisiting buisness.</p> 
           
-          <Link  to='/shop' class={style.link_style}> 
-            <button className={style.consultButton}>Schedule a consultation</button>
-          </Link>
+      <div class={style.container_about}>
+        <div class={styles.inner_alignment}> 
+            <div class={style.col}>
+            <img class={styles.animation_icon} src={require("./images/biz_icon.png")}  alt="wifi"/>
+              <h3 class={styles.bar_text}><CountUp  delay={2} end={15} /> +</h3>
+              <h3 class={styles.container_text}>Years in buisness</h3> 
+            </div>
 
-      <div class={style.container_animation}>
-        <div class={style.col}>
-        <h3 class={style.left_title}>Years in buisness</h3> 
-          <img class={style.animation_icon} src={require("./images/biz_icon.png")}  alt="wifi"/>
-          <h3 class={style.bar_text}><CountUp  delay={2} end={15} /> +</h3>
+            <div class={style.col}>
+            <img class={styles.animation_icon} src={require("./images/team_m.jpg")}  alt="wifi"/> 
+             <h3 class={styles.bar_text}><CountUp delay={2} end={10} /> +</h3>
+             <h3 class={styles.container_text}>Team Members</h3>
           
+            </div>
+            <div class={style.col}>
+              <img class={styles.animation_icon} src={require("./images/projects.png")}  alt="wifi"/>
+              <h3 class={styles.bar_text}><CountUp delay={2} end={350} /> +</h3>
+              <h3 class={styles.container_text}>Finished Projects</h3> 
+            </div>
+            <div class={style.col}> 
+             <img class={styles.animation_icon} src={require("./images/certificate.jpg")}  alt="wifi"/>
+             <h3 class={styles.bar_text}><CountUp delay={2} end={15}/> +</h3>
+             <h3 class={styles.container_text}>Certificates</h3> 
+            </div>
         </div>
-
-        <div class={style.col}>
-        <h3 class={style.bar_text}>Team Members</h3>
-          <img class={style.animation_icon} src={require("./images/team_m.jpg")}  alt="wifi"/> 
-          <h3 class={style.bar_text}><CountUp delay={2} end={10} /> +</h3>
-          
-        </div>
-
-        <div class={style.col}>
-          <h3 class={style.bar_text}>Finished Projects</h3> 
-          <img class={style.animation_icon} src={require("./images/projects.png")}  alt="wifi"/>
-
-          <h3 class={style.bar_text}><CountUp delay={2} end={350} /> +</h3>
-          
-        </div>
-
-        <div class={style.col}>
-          <h3 class={style.right_title}>Certificates</h3> 
-          <img class={style.animation_icon} src={require("./images/certificate.jpg")}  alt="wifi"/>
-          <h3 class={style.bar_text}><CountUp delay={2} end={15}/> +</h3>
-          
-        </div>
-      </div>
+      </div> 
 
         </article>
-
+      
+      <Link  to='/shop' class={style.link_style}> 
+            <button className={style.consultButton}>Schedule a consultation</button>
+      </Link>
 
       </section>
+
 
     </body>
 

@@ -15,44 +15,36 @@ function Developer() {
 
   
   return (
-    <React.Fragment>
+<React.Fragment>
   	<header className={style.header_views}>     
-      <img src={require("./images/web_dev.jpg")}  alt="fog over the bay"/>
+    <img src={require("./images/web_dev.jpg")}  alt="fog over the bay"/>
       <div class={style.hero_text_net}>
-        <h1>Development Services</h1>
+        <h2 class={style.overview_title}>Development Services</h2>
       </div>
     </header>
-
     <body className={style.BodyView}>
-
       <section>
-        <nav class={style.side_nav}>
-          <ul style={sideNavUl}>
-            <Link  to='/developmentBackend'>
-              <li><button className={style.navButtons}>Backend Development</button></li>
-            </Link>
-            <Link to='/developmentWeb'> 
-              <li><button className={style.navButtons}>Frontend Web Applications</button></li>
-            </Link>
-
-            <Link to='/developmentMobile'>
-             <li><button className={style.navButtons}>Frontend Mobile Applications</button></li>
-            </Link>
-          </ul>
-        </nav>
-
-        <article className={style.article_view}>
-          <h1 class={style.handle_title}>Backend Development</h1>
-          <p class={style.handle_text}> Our in house Developers prefer to develop backend of their applications with a Node.js javascript environment. The Node.JS framework allows us to create effecient and scallable applications with a short turnaround time.</p>
+        <article className={style.article_view_over}>
+        <Link className={style.general_link} to='/developmentBackend'> 
+          <h1 class={style.handle_title_overview}>Backend Development</h1>
+        </Link> 
+        <p class={style.handle_gentext}>Our in house Developers prefer to develop backend of their applications with a Node.js javascript environment. The Node.JS framework allows us to create effecient and scallable applications with a short turnaround time.</p>
           
-          <p class={style.handle_text}> Our developers have the skillset to create RESTful APIs for your backend, and integrate third-party APIs with any previous application. The development team can design applications using either SQL or noSQL database. Furthermore, our team also has the skillset to develop scalable MicroService archeticture for your application utilizing Hapi.JS. When you work with ZiraSolution's backend development team, you'll be working with sharp-witted developers that have a motivating drive to excell applications. </p> 
-            
-          <h1 class={style.handle_title}>Frontend Web Applications</h1>
-          <p class={style.handle_text}> Our developers prefer to work with a javascript framework on the front-end for web applications. Our in-house speciality is React.js, an emerging framework by Facebook, which allows us to render applications faster on the DOM. However, we can also provide frontend development in Angular.JS or HTML5.</p> 
-          <p class={style.handle_text}> Whether you want to simply redesign your corporate website or create a web application from scratch. We can provide this service for you at competitve rates.</p> 
-          
-          <h1 class={style.handle_title}>Frontend Mobile Applications</h1> 
-          <p class={style.handle_text}> Our main speciality in designing mobile applications is creating iOS applications with Apple's very own Swift programming language. If you are looking for applications for both iOS and Android, we can consider designing your application in REACT Native. Whether you have a buisness idea your trying to bring to reality or you have a application you want to bring to a mobile platform ZiraSolution's mobile team has a framework for you.</p> 
+        <p class={style.handle_gentext}>Our developers have the skillset to create RESTful APIs for your backend, and integrate third-party APIs with any previous application. The development team can design applications using either SQL or noSQL database. Furthermore, our team also has the skillset to develop scalable MicroService archeticture for your application utilizing Hapi.JS. When you work with ZiraSolution's backend development team, you'll be working with sharp-witted developers that have a motivating drive to excell applications.<a class={style.learn_more} href="/developmentBackend"> learn more</a> </p> 
+
+        <Link className={style.general_link} to='/developmentWeb'> 
+          <h1 class={style.handle_title_overview}>Frontend Web Applications</h1>
+        </Link> 
+          <p class={style.handle_gentext}> When you are trying to work in an enterprise network, keep the corporate network perforiming profeciently can be a hard and danting task.It is something that no one should try to tackle alone. With our network experts in the industry since the 1990s, the Zira Solution team has an expert for any style of network. We can help you design a network, but can also help manage it for you. So anytime you face a downtime we can have our experts come onsite and bring you back up. With our dedicated young team, we also offer on-site network support. <a class={style.learn_more} href="/networkService"> learn more</a></p>  
+
+        <Link className={style.general_link} to='/developmentMobile'> 
+          <h1 class={style.handle_title_overview}>Frontend Mobile Applications</h1>
+        </Link> 
+          <p class={style.handle_gentext}>In this digital age, buisness have a lot of data that they collect. It is important to have a strong infrastructer to access this data at your fingertips. Whether you have a dated system or the latest storage system, our team has the expertise to let you gain access to your corporate data in a few seconds time. <a class={style.learn_more} href="/developmentMobile"> learn more</a></p>
+
+          <Link  to='/shop' class={style.link_style}> 
+            <button className={style.consultButton}>Schedule a consultation</button>
+          </Link>
 
         </article>
 
@@ -60,7 +52,6 @@ function Developer() {
       </section>
 
     </body>
-
     </React.Fragment>
   );
 }

@@ -10,7 +10,7 @@ function cloudArchitecture() {
   return (
     <React.Fragment>
   	  	<header className={style.header_views}>     
-      <img src={require("./images/sf_fog.jpg")}  alt="fog over the bay"/>
+      <img class="center" src={require("./images/sf_fog.jpg")}  alt="fog over the bay"/>
       <div class={style.hero_text_net}>
         <h1>Cloud Architecture</h1>
       </div>

@@ -6,9 +6,11 @@ body{
   align-items: center; 
 }
 
-header{
-  position:fixed;
+
+
+header_views{
   width: 100%; 
+
 }
   /* The hero image */
 .header_1{
@@ -17,7 +19,6 @@ header{
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
-  
   position: absolute;
   width: 100%; 
   display: flex;

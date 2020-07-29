@@ -1,76 +1,76 @@
 import React, {useState, useEffect} from 'react';
 import './css/App.css';
-import style from './css/form.module.css';
-
+import styles from './css/form.module.css';
+import style from './css/genView.module.css';
 import {Link} from 'react-router-dom'; 
 
+import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput, MDBDropdownToggle, } from 'mdbreact';
+
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
+
 function Shop() {
+
+
   return (
     <React.Fragment>
-  	<header className={style.header_style}>
-      <h1 className={style.h1_form}>Contact Us</h1>
+    <header className={style.header_views}>     
+      <img src={require("./images/sick_vista.jpg")}  alt="fog over the bay"/>
+      <div class={style.hero_text_net}>
+      <h1 class={styles.head_left}>Contact US</h1>
+      </div>
     </header>
+   
+    <body className={styles.BodyView}> 
 
-    <p className={style.handle_gentext}> We are glad you want to consider taking steps towards making your companies technology and infrastructure better. To help make this experience be catered exactly to your needs, please fill out our Consultation form. By understanding exactly what you are looking for, we can assemble the right tools and requirements suited for your network. One of our experienced team members will contact you soon with more information about how we can help take your experiene to the next level. </p>
-
-    <body> 
+    <article className={style.article_view}>
+      <p className={styles.handle_gentext}> We are glad you want to consider taking steps towards making your companies technology and infrastructure better. To help make this experience easy and catered exactly to your needs, please fill out our Consultation form. By understanding exactly what you are looking for, we can assemble the right tools and requirements suited for your network. One of our experienced team members will contact you soon with more information about how we can help take your experience to the next level. </p>
+    
 
       <section className={style.section_style}>       
          
-          <form className={style.form_view}>
-            
-            <h1>Consultation Form</h1>
-            <h4 className={style.sub_form_titles}>Client Information</h4>
+      <MDBContainer>
+        <MDBRow>
+          <MDBCol md="7">
+            <form className={styles.form_card}>
+              <div className="grey-text">
 
-            <label className={style.sub_form_titles} for="name"> Name: </label>
-
-            <div className={style.form_inputs}> 
-              <input className={style.input_style_l} type="text" id="name" name="name" placeholder="Firstname"></input>
-
-              <input className={style.input_style}  type="text" id="name" name="name" placeholder="Lastname"></input>
-            </div>
-
-            <label className={style.sub_form_titles} for="service">Contact: </label>
-            <div className={style.form_inputs}> 
-              
-                <input className={style.input_style_l} type="text" id="fname" name="firstname" placeholder="Phone Number"></input>
-
-                <input className={style.input_style} type="text" id="fname" name="firstname" placeholder="Email"></input>
-            </div>
-
-            <h4 className={style.sub_form_titles}>Service Information</h4>  
-            <div className={style.form_inputs}> 
-              <select className={style.input_style_l} name="services" id="service">
-                <option selected="selected" className={style.defaultChoice} value=""> choose a service</option>
-                <option value="cloud">Cloud Services</option>
-                <option value="Infrastructure">Infrastructure</option>
-                <option value="development">Development</option>
-              </select>
-
-
-              <select className={style.input_style} name="services" id="service">
-                <option selected="selected" className={style.defaultChoice} value=""> company size</option>
-                <option value="cloud">Cloud Services</option>
-                <option value="Infrastructure">Infrastructure</option>
-                <option value="development">Development</option>
-              </select>
-            </div>
-            <br></br>
-            
-            <textarea className={style.textbox_form} id="inquiry" name="inquiry">
-              Any further information, required for inquiry.
-              
-            </textarea>
-
-
-            <input className={style.button_size} type="submit" value="Submit" />
-          </form>
+                <MDBInput label="Your name" icon="user" group type="text" validate error="wrong"
+                  success="right" />
+                <MDBInput label="Your email" icon="envelope" group type="email" validate error="wrong"
+                  success="right" />
+                <MDBInput label="Your phone" icon="mobile-alt" group type="email" validate error="wrong"
+                  success="right" />
+               
+                <div > 
+                <i class="fas fa-suitcase fa-2x"></i>
+                <select className={styles.input_drop}>
+                  <option selected> Choose a Service </option>
+                  <option value="Cloud">Cloud</option>
+                  <option value="Infrastructure">Infrastructure</option>
+                  <option value="Development">Development</option>
+                </select>
+                </div>
+    
+                <MDBInput type="textarea" rows="2" label="Your message" icon="pencil-alt" />
+              </div>
+              <div className="text-center">
+                <MDBBtn outline color="Indigo">
+                  Send
+                  <MDBIcon far icon="paper-plane" className="ml-1" />
+                </MDBBtn>
+              </div>
+            </form>
+          </MDBCol>
+        </MDBRow>
+    </MDBContainer>
 
       </section>
-
+      </article>
     </body>
     </React.Fragment>
   );
+
 }
 
 export default Shop;

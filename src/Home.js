@@ -55,8 +55,8 @@ function Home() {
       <img class={style.img_1} src={require("./images/bay_area.jpg")}  alt="bay area"/>
       <div class={style.hero_text}>
     	  <h1>Unbeatable IT Support</h1>
-    	  <h2>All across the Bay Area</h2>
-        <h3>EST. 2015</h3>
+    	  <h4>All across the Bay Area</h4>
+        <h3>Since 2015</h3>
   	  </div>
     </header>
 

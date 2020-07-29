@@ -1,5 +1,8 @@
 import React from 'react';
 
+import '@fortawesome/fontawesome-free/css/all.min.css'; 
+import 'bootstrap-css-only/css/bootstrap.min.css'; 
+import 'mdbreact/dist/css/mdb.css';
 import Nav from './Nav'; 
 import Footer from './website_footer'; 
 import About from './About.js';
@@ -27,6 +30,8 @@ import './css/App.css';
 import './css/home.module.css';
 import './css/genView.module.css';
 import './network.module.css';
+
+
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'; 
 import { expression } from '@babel/template';

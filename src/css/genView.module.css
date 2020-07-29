@@ -8,7 +8,9 @@
   margin-bottom: -200px;
   clip-path: polygon(50% 0%, 100% 0, 100% 65%, 0 65%, 0 0);
 }
-
+.comment_points{
+  margin-left: 100px;
+}
 .header1{
   width: 100%; 
   overflow: hidden; 
@@ -19,6 +21,11 @@
   margin-top: sticky; 
   clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 5vw));
 }
+
+.time_line{ 
+  background: 'rgb(33, 150, 243)';
+  color: '#fff';
+};
 
 .background_pic{
   justify-content: center;
@@ -61,7 +68,7 @@ section {
 }
 
 .BodyView{
-  top:0%;
+  margin-top: 50px;
   vertical-align: top;
   box-sizing: border-box;
 }
@@ -316,8 +323,6 @@ section {
   color:black;
   text-align: left;
   margin-left: 100px;
-
-
 }
 
 .col1{

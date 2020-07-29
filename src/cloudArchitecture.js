@@ -33,6 +33,7 @@ function cloudArchitecture() {
 
           <h1 className={style.handle_genblue}>Consulting Services</h1>
           <p class={style.handle_gentext}> Our cloud strategy and planning services include, but are not limited to, the following:</p> 
+          
           <ul className={style.bulletCol}>
             <div className={style.columns}>
 
@@ -64,26 +65,27 @@ function cloudArchitecture() {
 
           <p class={style.handle_gentext}> For businesses acclimatizing to or already in the cloud, our 24/7 help desk and self-service management solutions build enormous long-term value and ease of use into service packages. ZiraSoltuions removes the burden of troubleshooting and maintenance, by addressing IT concerns before they become IT problems.</p> 
 
-          <div class={style.container_animation}>
-        <div class={style.inner_alignment}> 
-          <div class={style.col}>
-            <h2 class={style.wht_txt}><CountUp  delay={2} end={63} /> %</h2>
-            <p class={style.container_text}> Of customers believe  cloud adoption is transformational</p> 
-          </div>
-          <div class={style.col}>
-            <h2 class={style.wht_txt}><CountUp  delay={2} end={172} /></h2>
-            <p class={style.container_text}> Clients have been migrated by Zira Solution Experts</p> 
-          </div>
-          <div class={style.col}>
-            <h2 class={style.wht_txt}><CountUp  delay={2} end={75} /> %</h2>
-            <p class={style.container_text}> U.S. corporations utilize a cloud-first strategy</p> 
-          </div>
-          <div class={style.col}> 
-            <h2 class={style.wht_txt}><CountUp  delay={2} end={27} /> %</h2>
-            <p class={style.container_text}>Of Reduction in on-site work is done by joining the cloud</p> 
-          </div>
-      </div>
+      <div class={style.container_animation}>
+          <div class={style.inner_alignment}> 
+            <div class={style.col}>
+              <h2 class={style.wht_txt}><CountUp  delay={2} end={63} /> %</h2>
+              <p class={style.container_text}> Of customers believe  cloud adoption is transformational</p> 
+            </div>
+            <div class={style.col}>
+              <h2 class={style.wht_txt}><CountUp  delay={2} end={172} /></h2>
+              <p class={style.container_text}> Clients have been migrated by Zira Solution Experts</p> 
+            </div>
+            <div class={style.col}>
+              <h2 class={style.wht_txt}><CountUp  delay={2} end={75} /> %</h2>
+              <p class={style.container_text}> U.S. corporations utilize a cloud-first strategy</p> 
+            </div>
+            <div class={style.col}> 
+              <h2 class={style.wht_txt}><CountUp  delay={2} end={27} /> %</h2>
+              <p class={style.container_text}>Of Reduction in on-site work is done by joining the cloud</p> 
+            </div>
+        </div>
       </div> 
+
       </article>
 
       <Link  to='/shop' class={style.link_style}> 

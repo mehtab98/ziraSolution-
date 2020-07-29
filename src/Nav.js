@@ -19,6 +19,7 @@ function Nav() {
     fontSize: "11px",
     width: "160px"
   }
+  
   const contactButton ={ 
     backgroundColor: "#e7e7e7", 
     border: "none",
@@ -33,13 +34,11 @@ function Nav() {
 
   return (
     <nav>
-
-      <Link style={linkStyle} to='/'>   
-      	<h3 style={navStyles} > Zira Solutions </h3> 
-      </Link> 
-
       <ul className = "nav-links">  
-      	
+       <Link style={linkStyle} to='/'>   
+      	<h3 style={navStyles} > Zira Solutions </h3> 
+       </Link> 
+
       	<Link style={linkStyle} to='/about'>  
           <button className="dropbtn">About</button> 
       	</Link> 

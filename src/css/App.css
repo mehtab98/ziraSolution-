@@ -4,12 +4,14 @@
 
 nav{
   display:flex; 
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  min-height: 10vh; 
+  height: 5vh; 
   background: #123c69;
   background-color:  #123c69;
   color: white; 
+  width: 100%;
   min-width: 200vh;
   margin-top: 0px;
 } 
@@ -23,11 +25,13 @@ ul{
 
 
 .nav-links{
-  width: 50%;
+  margin-top: 15px;
+  width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-around; 
   list-style: none; 
-  align-items: center;  
+  align-items: baseline;  
 }
 
 .contactButton{

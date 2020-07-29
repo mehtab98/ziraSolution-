@@ -1,10 +1,13 @@
 import React from 'react';
 import CountUp from 'react-countup';
 import './css/App.css';
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 
-import style from './css/columnView.module.css';
-import styles from './css/genView.module.css';
-import stylez from './css/home.module.css';
+import { Timeline, TimelineItem }  from 'vertical-timeline-component-for-react';
+
+import 'react-vertical-timeline-component/style.min.css';
+
+import style from './css/genView.module.css';
 
 import {Link} from 'react-router-dom';
 
@@ -12,9 +15,9 @@ function networkRoadMap() {
   return (
     <React.Fragment>
   	<header className={style.header_views}>     
-      <img src={require("./images/it_network.jpeg")}  alt="fog over the bay"/>
+      <img src={require("./images/sick_vista.jpg")}  alt="fog over the bay"/>
       <div class={style.hero_text_net}>
-        <h1>Project Roadmap</h1>
+        <h1> Project Roadmap</h1>
         <p>We take every project with serious consideration. We have higlighted the steps we take when it comes to designing your infrastructure</p> 
       </div>
     </header>
@@ -23,81 +26,126 @@ function networkRoadMap() {
 
       <section>
         
-        <article className={styles.article_view}>
-        <h1 className={style.handle_gentext}>Step 1: Assessment</h1>
-          <p class={style.handle_gentext}> We take the time to learn your business needs. To become a strong business partner for your
-organization, we explore the following questions:</p>
+        <article className={style.article_view}>
 
-          <ul class={style.bulletStyle}> 
-            <li> What are your business goals?</li>
-            <li> What role does technology play in the organization? </li>
-            <li> How can technology enhance your operations?</li> 
-          </ul>
+      <Timeline lineColor={'#ddd'}>
+        <TimelineItem
+          key="001" 
+          dateText="Step 1: Assessment"
+          dateInnerStyle={{ background: '#123c69', color: 'white' }}
+          style={{ color: '#123c69' }}
+        >
+           <p class={style.handle_gentext}> We take the time to learn your business needs. To become a strong business partner for your
+           organization, we explore the following questions:</p>
 
-          <h1 className={style.handle_gentext}>Step 2: Report Our Findings</h1>
+          
+            <p class={style.comment_points}> What are your business goals?</p>
+            <p class={style.comment_points}> What role does technology play in the organization?</p>
+            <p class={style.comment_points}> How can technology enhance your operations? </p>
+          
+        </TimelineItem>
+        <TimelineItem
+          key="002"
+          dateText="Step 2: Reporting Findings"
+          dateInnerStyle={{ background: '#123c69', color: 'white' }}
+          bodyContainerStyle={{
+            background: '#ddd',
+            padding: '20px',
+            borderRadius: '8px',
+            boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+          }}
+        >
           <p class={style.handle_gentext}>We share our candid assessment of challenges and opportunities and use this understanding to
-develop a holistic technology strategy and prioritize solutions. This is a collaborative process with
-your leadership team allowing our professionals to confirm their knowledge of your business and
-operational goals.</p> 
-
-          <h1 className={style.handle_gentext}>Step 3: Roadmap Designed</h1>
-          <p class={style.handle_gentext}>From our discussions, we create a road-map of high level projects to be completed with mutually
-agreed upon timelines. This conversation includes a discussion of budget for immediate and
-longer term projects.</p> 
-
-          <h1 className={style.handle_gentext}>Step 4: Alignment</h1>
+          develop a holistic technology strategy and prioritize solutions. This is a collaborative process with your leadership team allowing our professionals to confirm their knowledge of your business and
+            operational goals.</p> 
+        </TimelineItem>
+        <TimelineItem
+          key="003"
+          dateText="Step 3: Assessment"
+          
+          dateInnerStyle={{ background: '#123c69', color: 'white' }}
+          
+        >
+        <p class={style.handle_gentext}>From our discussions, we create a road-map of high level projects to be completed with mutually
+        agreed upon timelines. This conversation includes a discussion of budget for immediate and longer term projects.</p>           
+        </TimelineItem>
+        <TimelineItem
+          key="004"
+          dateText="Step 4: Alignment"
+          dateInnerStyle={{ background: '#123c69', color: 'white' }}
+          style={{ color: '#123c69' }}
+          bodyContainerStyle={{
+            background: '#ddd',
+            padding: '20px',
+            borderRadius: '8px',
+            boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+          }}
+        >
           <p class={style.handle_gentext}>We will provide a Statement of Work to ensure we are aligned with expectations and then begin
-the on-boarding process. We believe in clear communication at every step of the process and
-transparency in the cost of our services.</p> 
-          <h1 className={style.handle_gentext}>Step 5: Onboarding</h1>
+          the on-boarding process. We believe in clear communication at every step of the process and transparency in the cost of our services.</p> 
+        </TimelineItem>
+        <TimelineItem
+          key="005"
+          dateText="Step 5: onboarding"
+          dateInnerStyle={{ background: '#123c69', color: 'white' }}
+          style={{ color: '#123c69' }}
+        >
+
           <p class={style.handle_gentext}>As part of the managed services contract, we provide a detailed onboarding process which
 generally happens 2-4 weeks prior to going live. The process timeline depends on your
 organization’s complexity and technology requirements. We gather information on current
 software applications, equipment, infrastructure and security that we will support and document
 this for easy access. During the onboarding process:</p>  
-          <ul class={style.bulletStyle}> 
-            <li> We assign a client service manager and technical team to support your business</li>
-            <li> Technical teams shares knowledge and understanding of your business systems with the technical support team</li>
-            <li> We create a complete inventory of your systems, network and operations</li> 
-          </ul>
-          <h1 className={style.handle_gentext}>Step 6: Go Live</h1> 
-          <p class={style.handle_gentext}>Once a go-live date is established, the ZiraSolution’s Technology account team will meet with
-you to walk through the transition plan to set expectations, establish communication tools and
-agree on milestones to ensure a smooth process.</p>  
-            <p class={style.handle_gentext}>Our client service professionals will check in regularly becoming an extension of your team. They
-will stay updated on changes to your organization and provide a quarterly review of services to highlight benchmarks made from our roadmap</p>  
 
-        <div class={style.container_about}>
-        <div class={stylez.inner_alignment}> 
-            <div class={style.col}>
-            <img class={stylez.animation_icon} src={require("./images/biz_icon.png")}  alt="wifi"/>
-              <h3 class={stylez.bar_text}><CountUp  delay={2} end={15} /> +</h3>
-              <h3 class={stylez.container_text}>Years in buisness</h3> 
-            </div>
-
-            <div class={style.col}>
-            <img class={stylez.animation_icon} src={require("./images/team_m.jpg")}  alt="wifi"/> 
-             <h3 class={stylez.bar_text}><CountUp delay={2} end={10} /> +</h3>
-             <h3 class={stylez.container_text}>Team Members</h3>
           
-            </div>
-            <div class={style.col}>
-              <img class={stylez.animation_icon} src={require("./images/projects.png")}  alt="wifi"/>
-              <h3 class={stylez.bar_text}><CountUp delay={2} end={350} /> +</h3>
-              <h3 class={stylez.container_text}>Finished Projects</h3> 
-            </div>
-            <div class={style.col}> 
-             <img class={stylez.animation_icon} src={require("./images/certificate.jpg")}  alt="wifi"/>
-             <h3 class={stylez.bar_text}><CountUp delay={2} end={15}/> +</h3>
-             <h3 class={stylez.container_text}>Certificates</h3> 
-            </div>
-        </div>
-      </div> 
+            <p class={style.comment_points}> We assign a client service manager and technical team to support your business</p>
+            <p class={style.comment_points}> Technical teams shares knowledge and understanding of your business systems with the technical support team</p>
+            <p class={style.comment_points}> We create a complete inventory of your systems, network and operations</p>
+          
+        </TimelineItem>
+        <TimelineItem
+          key="006"
+          dateText="Step 6: Deploy Applications"
+          dateInnerStyle={{ background: '#123c69', color: 'white' }}
+          bodyContainerStyle={{
+            background: '#ddd',
+            padding: '20px',
+            borderRadius: '8px',
+            boxShadow: '0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2)',
+          }}
+        >
+          <p class={style.handle_gentext}>We share our candid assessment of challenges and opportunities and use this understanding to
+          develop a holistic technology strategy and prioritize solutions. This is a collaborative process with your leadership team allowing our professionals to confirm their knowledge of your business and
+            operational goals.</p> 
+        </TimelineItem>
+       
+      </Timeline>
 
-      </article>
-      
-      <Link  to='/shop' class={styles.link_style}> 
-            <button className={styles.consultButton}>Schedule a consultation</button>
+      <div class={style.container_animation}>
+        <div class={style.inner_alignment}> 
+          <div class={style.col}>
+            <h2 class={style.wht_txt}><CountUp  delay={2} end={30} /> %</h2>
+            <p class={style.container_text}> Corporations are able to work off-site with Zira Solution</p> 
+          </div>
+          <div class={style.col}>
+            <h2 class={style.wht_txt}><CountUp  delay={2} end={125} /></h2>
+            <p class={style.container_text}> Projects deployed from start to finish with this roadmap</p> 
+          </div>
+          <div class={style.col}>
+            <h2 class={style.wht_txt}><CountUp  delay={2} end={45} /> %</h2>
+            <p class={style.container_text}> Stronger network security with Zira Solution</p> 
+          </div>
+          <div class={style.col}> 
+            <h2 class={style.wht_txt}><CountUp  delay={2} end={86} /> %</h2>
+            <p class={style.container_text}>Clients are comfortable with our support</p> 
+          </div>
+      </div>
+    </div> 
+
+    </article> 
+
+      <Link  to='/shop' class={style.link_style}> 
+        <button className={style.consultButton}>Schedule a consultation</button>
       </Link>
 
       </section>

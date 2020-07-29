@@ -4,10 +4,13 @@
   "private": true,
   "dependencies": {
     "@emotion/core": "^10.0.28",
+    "@formiz/core": "^1.0.0-rc.16",
+    "@formiz/validations": "^1.0.0-rc.14",
     "bootstrap": "^4.5.0",
     "emotions": "0.0.1",
     "express": "^4.17.1",
     "jquery": "^3.5.1",
+    "mdbreact": "^4.27.0",
     "node-sass": "^4.14.1",
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
@@ -19,8 +22,10 @@
     "react-responsive-carousel": "^3.2.9",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "react-vertical-timeline-component": "^3.0.2",
     "serve": "^11.3.2",
-    "swiper": "^6.0.4"
+    "swiper": "^6.0.4",
+    "vertical-timeline-component-for-react": "^1.0.7"
   },
   "scripts": {
     "test": "react-scripts test",

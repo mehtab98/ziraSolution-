@@ -10,6 +10,12 @@
   clip-path: polygon(50% 0%, 100% 0, 100% 65%, 0 65%, 0 0);
 }
 
+@media only screen and (min-width: 1600px) {
+  body {
+   margin-left: 300px;
+  }
+}
+
 
 .header_views{
   margin: 40px auto; 

@@ -40,12 +40,10 @@ function Cloud() {
 
           <p class={style.handle_text}> Sometimes projects have a slow turnaround time because IT teams do not know where to begin. Our project roadmaps will help them from finish to start. If anywhere your team gets stuck they can simply contact us and we can help them get right back on track. With the experience Zira Solution has in cloud infrastructer the complex cloud can be understood in leimans terms. <a class={style.learn_more} href="/cloudArchitecture">learn more</a> </p>
 
-          <Link  to='/shop' class={style.link_style}> 
-            <button className={style.consultButton}>Schedule a consultation</button>
-          </Link>
-
         </article>
-
+        <Link  to='/shop' class={style.link_style}> 
+            <button className={style.consultButton}>Schedule a consultation</button>
+        </Link>
 
       </section>
 

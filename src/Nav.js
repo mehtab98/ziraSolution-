@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom'
 function Nav() {
 
   const navStyles = { 
+    marginTop:'20px',
     color: 'white',
     textDecoration: 'none'
   };
@@ -105,6 +106,7 @@ function Nav() {
           <li style={navStyles}><a href="./Developer">
             <button style={contactButton}>CONTACT US</button></a></li>
       	</Link> 
+
       </ul> 	 
     </nav>
   );

@@ -28,32 +28,43 @@ function About() {
 
           <p class={style.handle_gentext}> Whether it’s a classic mom or pop shop or the next Silicon Valley startup, we can help deploy new software or support your exisiting buisness.</p> 
           
-      <div class={style.container_about}>
-        <div class={styles.inner_alignment}> 
-            <div class={style.col}>
-            <img class={styles.animation_icon} src={require("./images/biz_icon.png")}  alt="wifi"/>
-              <h3 class={styles.bar_text}><CountUp  delay={2} end={15} /> +</h3>
-              <h3 class={styles.container_text}>Years in buisness</h3> 
-            </div>
-
-            <div class={style.col}>
-            <img class={styles.animation_icon} src={require("./images/team_m.jpg")}  alt="wifi"/> 
-             <h3 class={styles.bar_text}><CountUp delay={2} end={10} /> +</h3>
-             <h3 class={styles.container_text}>Team Members</h3>
-          
-            </div>
-            <div class={style.col}>
-              <img class={styles.animation_icon} src={require("./images/projects.png")}  alt="wifi"/>
-              <h3 class={styles.bar_text}><CountUp delay={2} end={350} /> +</h3>
-              <h3 class={styles.container_text}>Finished Projects</h3> 
-            </div>
-            <div class={style.col}> 
-             <img class={styles.animation_icon} src={require("./images/certificate.jpg")}  alt="wifi"/>
-             <h3 class={styles.bar_text}><CountUp delay={2} end={15}/> +</h3>
-             <h3 class={styles.container_text}>Certificates</h3> 
-            </div>
+      <div class={styles.finesse_animation}>
+        <div class={styles.col}>
+        <h3 class={styles.left_title}>Years in buisness</h3> 
+          <img class={styles.animation_icon} src={require("./images/biz_icon.png")}  alt="wifi"/>
+          <div class={styles.render_left}> 
+            <h3 class={styles.render}><CountUp  delay={2} end={15} />+</h3>
+          </div>
         </div>
-      </div> 
+
+        <div class={styles.col}>
+        <h3>Team Members</h3>
+          <img class={styles.animation_icon} src={require("./images/team_m.jpg")}  alt="wifi"/> 
+          <div class={styles.render_mid}> 
+          <h3 class={styles.render}><CountUp delay={2} end={10} />+</h3>
+          </div> 
+        </div>
+
+        <div class={styles.col}>
+          <h3>Finished Projects</h3> 
+          <img class={styles.animation_icon} src={require("./images/projects.png")}  alt="wifi"/>
+
+          <div class={styles.render_third}> 
+            <h3><CountUp delay={2} end={350}/></h3> 
+            <h3 class={styles.plus_pushed}>+</h3>
+          </div>
+          
+        </div>
+
+        <div class={styles.col}>
+          <h3 class={styles.right_title}>Certificates</h3> 
+          <img 
+class={styles.animation_icon} src={require("./images/certificate.jpg")}  alt="wifi"/>
+          <div class={styles.render_last}>
+            <h3 class={styles.render}><CountUp delay={2} end={15}/>+</h3>
+          </div> 
+        </div>
+      </div>
 
         </article>
       

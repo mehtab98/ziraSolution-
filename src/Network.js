@@ -50,12 +50,11 @@ function Network() {
         </Link> 
           <p class={style.handle_gentext}> Modern day technology has designed a variety of operating systems for different buisness models. No matter what operating system you are utilizing we can provide support towards managing it. Even if you need a new operating system installed, we can provide you with the assistance in installing them.  <a class={style.learn_more} href="/operatingSystem">learn more</a></p>
 
-          <Link  to='/shop' class={style.link_style}> 
-            <button className={style.consultButton}>Schedule a consultation</button>
-          </Link>
 
         </article>
-
+        <Link  to='/shop' class={style.link_style}> 
+            <button className={style.consultButton}>Schedule a consultation</button>
+      </Link>
 
       </section>
 

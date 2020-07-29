@@ -7,7 +7,7 @@ nav{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 5vh; 
+  height: 10vh; 
   background: #123c69;
   background-color:  #123c69;
   color: white; 
@@ -25,7 +25,7 @@ ul{
 
 
 .nav-links{
-  margin-top: 15px;
+  margin-top:10px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -38,7 +38,7 @@ ul{
   background-color: #e7e7e7; 
   border: none;
   color: black;
-  padding: 15px 32px;
+  padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -49,7 +49,7 @@ ul{
 .dropbtn {
   background-color: #123c69;
   color: white;
-  padding: 16px;
+  padding: 23px;
   font-size: 16px;
   border: none;
 }
@@ -79,9 +79,11 @@ ul{
 
 .dropdown:hover .dropdown-content {display: block;}
 
+.dropbtn:hover {background-color: #777;} 
+
 .dropdown:hover .dropbtn {background-color: #777;}
 
-.dropbtn:hover {background-color: #777;} 
+
 
 .contactButton:hover {background-color:#777;}
 

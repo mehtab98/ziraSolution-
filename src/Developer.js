@@ -42,13 +42,11 @@ function Developer() {
         </Link> 
           <p class={style.handle_gentext}>In this digital age, buisness have a lot of data that they collect. It is important to have a strong infrastructer to access this data at your fingertips. Whether you have a dated system or the latest storage system, our team has the expertise to let you gain access to your corporate data in a few seconds time. <a class={style.learn_more} href="/developmentMobile"> learn more</a></p>
 
-          <Link  to='/shop' class={style.link_style}> 
-            <button className={style.consultButton}>Schedule a consultation</button>
-          </Link>
-
         </article>
 
-
+        <Link  to='/shop' class={style.link_style}> 
+            <button className={style.consultButton}>Schedule a consultation</button>
+        </Link>
       </section>
 
     </body>

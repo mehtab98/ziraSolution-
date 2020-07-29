@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 function operatingSystems() {
   return (
     <React.Fragment>
-  	  	<header className={style.header_views}>     
+  	<header className={style.header_views}>     
       <img src={require("./images/sick_vista.jpg")}  alt="fog over the bay"/>
       <div class={style.hero_text_net}>
         <h1>Operating Systems</h1>
@@ -70,7 +70,7 @@ that your investment will continue to pay dividends for many years to come.We al
 
             </div> 
           </ul>  
- 
+
       <div class={style.container_animation}>
         <div class={style.inner_alignment}> 
           <div class={style.col}>

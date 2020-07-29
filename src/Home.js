@@ -95,7 +95,7 @@ function Home() {
         </Link> 
        </div>
 
-       <div class={style.container_about}>
+       <div class={style.finesse_about}>
 
         <div class = {style.flex_alignview} >
         <p class={style.handle_text_about}>  Zira Solutions is specialized in Linux, Windows, AWS/Azure cloud support for small to medium sized businesses, whether it’s a classic mom or pop shop or the next Silicon Valley startup.  We can help to deploy or support Microsoft and Linux applications under tight budget and under your time restrictions. Our existing customers in San Jose and San Francisco makes us more accessible across the bay area. With our experience in deploying and supporting applications in complex AWS clouds and virtualization, it makes us the most exceptional provider in the market.</p>
@@ -103,7 +103,7 @@ function Home() {
 
       </div>
 
-      <div class={style.container_animation}>
+      <div class={style.finesse_animation}>
         <div class={style.col}>
         <h3 class={style.left_title}>Years in buisness</h3> 
           <img class={style.animation_icon} src={require("./images/biz_icon.png")}  alt="wifi"/>
@@ -135,7 +135,7 @@ function Home() {
           <h3 class={style.right_title}>Certificates</h3> 
           <img 
 class={style.animation_icon} src={require("./images/certificate.jpg")}  alt="wifi"/>
-          <div class={style.render_mid}>
+          <div class={style.render_last}>
             <h3 class={style.render}><CountUp delay={2} end={15}/>+</h3>
           </div> 
         </div>

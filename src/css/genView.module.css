@@ -145,6 +145,28 @@ section {
   max-width: 100px; 
 }
 
+.finesse_animation{
+  display: flex; 
+  flex-direction: row;
+  background-color: #fff;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 40px auto; 
+  height: auto;
+  max-width: 1000px; 
+}
+
+.finesse_about{
+  display: flex; 
+  flex-direction: row;
+  background-color: #fff;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 40px auto; 
+  height: auto;
+  max-width: 1000px; 
+}
+
 .article_view{
   -webkit-flex: 3;
   -ms-flex: 3;

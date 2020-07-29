@@ -109,6 +109,7 @@ header{
 }
 
 .flex_alignview{
+  margin-top: 25px;
   justify-content: space-around;
   align-content: space-between;
   flex-direction: column;
@@ -137,12 +138,35 @@ header{
   background: #fff; 
 }
 
+
 .container_about{
   flex-direction: row;
   flex: 1; 
   flex-wrap: nowrap;
   display: flex;
   justify-content: space-between;
+}
+
+.finesse_about{
+  display: flex; 
+  flex-direction: row;
+  background-color: #fff;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 40px auto; 
+  height: auto;
+  max-width: 1000px; 
+}
+
+.finesse_animation{
+  display: flex; 
+  flex-direction: row;
+  background-color: #fff;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 40px auto; 
+  height: auto;
+  max-width: 1000px; 
 }
 
 
@@ -193,7 +217,7 @@ header{
 
 
 .right_title{
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .container_about{
@@ -278,13 +302,14 @@ header{
   background-color: white;
   align-items: center;
   margin: 40px auto; 
-  height: 200px;
+  height: auto;
   max-width: 1000px; 
 }
 
 .finesse_p{
+  margin-top: 10px;
   text-align: center; 
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-right: 20px;
   margin-left: 20px;
   color:black;
@@ -331,12 +356,16 @@ header{
 }
  
 .render_left{
-  margin-left: 70px;
+  margin-left: 100px;
 }
 
  
 .render_mid{
-  margin-left: 55px;
+  margin-left: 75px;
+}
+
+.render_last{
+  margin-left: 60px;
 }
 .render_mid_300{
   margin-left: 75px;
@@ -347,7 +376,7 @@ header{
 
 .render_third{
   
-  margin-left: 58px;
+  margin-left: 75px;
   display: flex; 
   align-content: space-around;
 }

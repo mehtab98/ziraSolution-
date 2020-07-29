@@ -67,7 +67,18 @@ section {
   color: white;
 }
 
+.BodyView1{
+  margin-top: 50px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+
 .BodyView{
+  display: flex; 
+  flex-direction: row;
+  margin: 40px auto; 
+  align-items: baseline;
   margin-top: 50px;
   vertical-align: top;
   box-sizing: border-box;

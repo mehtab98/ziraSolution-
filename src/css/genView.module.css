@@ -93,7 +93,7 @@ section {
 .BodyView{
   display: flex; 
   flex-direction: row;
-  margin: 100px auto; 
+  margin: 500px auto; 
   align-items: baseline;
   margin-top: 50px;
   vertical-align: top;

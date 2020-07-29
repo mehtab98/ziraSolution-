@@ -10,14 +10,15 @@ function Cloud() {
 
   return (
     <React.Fragment>
+    
   	<header className={style.header_views}>     
       <img class="center" src={require("./images/sf_fog.jpg")}  alt="fog over the bay"/>
       <div class={style.hero_text_net}>
         <h2 class={style.overview_title}>Cloud Services</h2>
       </div>
     </header>
-    
     <body className={style.BodyView}>
+    
       <section>
         <article className={style.article_view_over}>
         <Link className={style.general_link} to='/cloudMigration'> 

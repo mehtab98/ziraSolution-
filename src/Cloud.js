@@ -17,9 +17,10 @@ function Cloud() {
         <h2 class={style.overview_title}>Cloud Services</h2>
       </div>
     </header>
+    
     <body className={style.BodyView}>
     
-      <section>
+      <section className={style.bigger}>
         <article className={style.article_view_over}>
         <Link className={style.general_link} to='/cloudMigration'> 
           <h1 class={style.handle_title_overview}>Cloud Migrations</h1>

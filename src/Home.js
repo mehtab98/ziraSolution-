@@ -8,8 +8,8 @@ import style from './css/home.module.css';
 //to inline style css
 import { jsx, css } from '@emotion/core'
 
-
 import {Link} from 'react-router-dom'
+
 function Home() {
 
   const reviews = { 

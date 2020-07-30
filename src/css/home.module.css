@@ -6,6 +6,25 @@ body{
   align-items: center; 
 }
 
+@media screen and (max-width: 400px) {
+
+  article.article_view_over{
+    margin-left: 550px;
+  }
+
+  div.finesse_animation{
+    display: flex; 
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    align-items: baseline;
+    justify-content: center;
+    margin: 38px auto; 
+    height: auto;
+    max-width: 1000px; 
+  }
+
+}
 
 
 header_views{
@@ -78,7 +97,6 @@ header_views{
   box-sizing: border-box; 
   overflow: hidden;
   text-align: center;
-  
 }
 
 .container .box:hover{

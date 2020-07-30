@@ -28,6 +28,20 @@
     margin-left: 433px;
   }
 
+  
+}
+
+@media screen and (max-width: 500px){
+  
+  article.article_view_form{
+    margin-left: 355px;
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    max-width: 650px; 
+  }
+
 }
 
 .header_views{
@@ -220,6 +234,8 @@ section {
   background-color: #f1f1f1;
   max-width: 1300px; 
 }
+
+
 
 .article_view_over{
   -webkit-flex: 3;

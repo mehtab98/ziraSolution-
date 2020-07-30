@@ -11,8 +11,9 @@
 }
 
 @media (min-width: 200px) {
-  .article_view_over{
+  article.article_view_over{
     background-color: orange;
+    margin-left: 400px;
   }
 }
 

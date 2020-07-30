@@ -10,11 +10,23 @@
   clip-path: polygon(50% 0%, 100% 0, 100% 65%, 0 65%, 0 0);
 }
 
-@media (min-width: 1600px) {
+@media screen and (min-width: 1600px) {
+
   article.article_view_over{
     background-color: orange;
-    margin-left: 530px;
+    margin-left: 550px;
   }
+
+  article.article_view{
+    background-color: orange;
+    margin-left: 350px;
+  }
+
+  button.consultButton{
+    margin-left: 500px;
+    background-color: orange;
+  }
+
 }
 
 .header_views{

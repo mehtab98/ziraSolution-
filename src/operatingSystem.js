@@ -94,7 +94,7 @@ that your investment will continue to pay dividends for many years to come.We al
     </article> 
 
       <Link  to='/shop' class={style.link_style}> 
-        <button className={style.consultButton}>Schedule a consultation</button>
+        <button className={style.consultButtonMain}>Schedule a consultation</button>
       </Link>
 
       </section>

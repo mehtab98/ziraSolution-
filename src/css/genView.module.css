@@ -17,11 +17,15 @@
   }
 
   article.article_view{
-    margin-left: 350px;
+    margin-left: 355px;
   }
 
   button.consultButton{
     margin-left: 500px;
+  }
+
+  button.consultButtonMain{
+    margin-left: 433px;
   }
 
 }
@@ -287,6 +291,21 @@ section {
 } 
 
 .consultButton{
+  background-color:#123c69; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  width: 250px;
+  margin-top: 30px; 
+  margin-bottom: 30px;
+}
+
+.consultButtonMain{
   background-color:#123c69; 
   border: none;
   color: white;

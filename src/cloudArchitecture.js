@@ -89,7 +89,7 @@ function cloudArchitecture() {
       </article>
 
       <Link  to='/shop' class={style.link_style}> 
-            <button className={style.consultButton}>Schedule a consultation</button>
+            <button className={style.consultButtonMain}>Schedule a consultation</button>
       </Link>
 
       </section>

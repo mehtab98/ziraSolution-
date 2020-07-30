@@ -14,29 +14,24 @@ function Home() {
 
   const reviews = { 
     0:{
-      name: "Jonathan D.",
+      name: "Rai Law Associates",
       quote:
-        "Door.com has been great. I feel like I got to work with a specialist at each point in the process. Everyone was very professional and very helpful. Plus, I'm amazed at the flat-fee for the sale! Great way to save at closing. Door.com has been great. I feel like I got to work with a specialist at each point in the process. Everyone was very professional and very helpful. Plus, I'm amazed at the flat-fee for the sale! Great way to save at closing."
+        "By Shifting to the cloud, Rai Associates have been succesful in starting to work remote. There solid skillset in cloud migration and cloud deployment made the transition really smooth. In these modern times the cloud is essential in running a succesful buisness."
     },
-   1:{
-      name: "Peter C.",
+    1:{
+      name: "Bay Area Graphics",
       quote:
-        "I have bought and sold ten homes. This has been the most rewarding experience of them all. True professionalism and insight as well as great customer service makes me a believer in the Door.com business model."
+        "Zira Solution provided us with the perfect infrastruce services, on a fast timeline. With their skills in data management and network support BAG is succesful in operating their buisness on a larger scale. With Zira Solutions commitment towards providing excellent service, we are confident in our network and IT Infrastructure."
     },
    2:{
-      name: "Paulette H.",
+      name: "Translarity",
       quote:
-        "The entire experience from onboarding to the sale of our home has been professional, expedited quickly, and I saved close to $14,000 in commissions. I will absolutely be using Door.com for the sale of my next property."
+        "Zira solution handles all of our infrastructure. They provide Translarity with a secure network, and help provide us 24 hour support. Their expertience can help any Bay Area Start-up get cost-effective support, and focus more on development."
     },
   3:{
-      name: "Ryan W.",
+      name: "Deeya energy",
       quote:
-        "Service was excellent EVERY step of the process! No way to tell that Door.com provided a flat rate service by the way that they treated us and handled every step of the transactions."
-    },
-   4:{
-      name: "Kevin R.",
-      quote:
-        "Everyone we worked with was very responsive, professional and easy to work with. A great experience all around. I work in this industry too so my expectations are high. Great work by all."
+        "Zira Solution helped provide all of the infrastructure and cloud support at our early start-up stages. Deeya Energy really appreciated their fast turnaround time, and accomdating to our constraints. We really felt safe in scaling, and enjoyed how accomadating Zira Solution could be."
     }
 };
 
@@ -96,7 +91,7 @@ function Home() {
 
        <div class={style.finesse_about}>
 
-        <div class = {style.flex_alignview} >
+        <div class = {style.flex_alignview}>
         <p class={style.handle_text_about}>  Zira Solutions is specialized in Linux, Windows, AWS/Azure cloud support for small to medium sized businesses, whether it’s a classic mom or pop shop or the next Silicon Valley startup.  We can help to deploy or support Microsoft and Linux applications under tight budget and under your time restrictions. Our existing customers in San Jose and San Francisco makes us more accessible across the bay area. With our experience in deploying and supporting applications in complex AWS clouds and virtualization, it makes us the most exceptional provider in the market.</p>
         </div>
 

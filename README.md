@@ -1,4 +1,4 @@
-This project is designing zirasolutions website using REACT.JS. Project also implemented bootstrap. If you are trying to run this project locally please reference these instructions: 
+This project was about re-designing Zira Solution's website using REACT.JS. Project also implemented bootstrap. If you are trying to run this project locally please reference these instructions: 
   1) run "npm install" to install all dependecy. 
   2) run "npm run dev" to deploy locall
 

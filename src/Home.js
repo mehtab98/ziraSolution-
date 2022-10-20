@@ -14,9 +14,9 @@ function Home() {
 
   const reviews = { 
     0:{
-      name: "Rai Law Associates",
+      name: "Harbor Electronics",
       quote:
-        "By Shifting to the cloud, Rai Associates have been succesful in starting to work remote. There solid skillset in cloud migration and cloud deployment made the transition really smooth. In these modern times the cloud is essential in running a succesful buisness."
+        "By Shifting to the cloud, Harbor Electronics has been succesful in starting to work remote. Zira's solid skillset in cloud migration and cloud deployment made the transition really smooth. In these modern times the cloud is essential in running a succesful buisness."
     },
     1:{
       name: "Bay Area Graphics",

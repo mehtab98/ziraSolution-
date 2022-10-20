@@ -33,12 +33,12 @@ function About() {
         <h3 class={styles.left_title}>Years in buisness</h3> 
           <img class={styles.animation_icon} src={require("./images/biz_icon.png")}  alt="wifi"/>
           <div class={styles.render_left}> 
-            <h3 class={styles.render}><CountUp  delay={2} end={15} />+</h3>
+            <h3 class={styles.render}><CountUp  delay={2} end={7} />+</h3>
           </div>
         </div>
 
         <div class={styles.col}>
-        <h3>Team Members</h3>
+        <h3>Customers</h3>
           <img class={styles.animation_icon} src={require("./images/team_m.jpg")}  alt="wifi"/> 
           <div class={styles.render_mid}> 
           <h3 class={styles.render}><CountUp delay={2} end={10} />+</h3>

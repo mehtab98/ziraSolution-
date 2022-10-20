@@ -14,12 +14,12 @@ function slides_create() {
         <div class={style.col}>
         <h3 class={style.left_title}>Years in buisness</h3> 
           <img class={style.animation_icon} src={require("./images/biz_icon.png")}  alt="wifi"/>
-          <h3><CountUp  delay={2} end={15} />+</h3>
+          <h3><CountUp  delay={2} end={7} />+</h3>
           
         </div>
 
         <div class={style.col}>
-        <h3>Team Members</h3>
+        <h3>Customers</h3>
           <img class={style.animation_icon} src={require("./images/team_m.jpg")}  alt="wifi"/> 
           <h3><CountUp delay={2} end={10} />+</h3>
           

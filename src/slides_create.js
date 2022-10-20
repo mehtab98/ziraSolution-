@@ -19,10 +19,9 @@ function slides_create() {
         </div>
 
         <div class={style.col}>
-        <h3>Customers</h3>
+          <h3>Customers Served</h3>
           <img class={style.animation_icon} src={require("./images/team_m.jpg")}  alt="wifi"/> 
           <h3><CountUp delay={2} end={10} />+</h3>
-          
         </div>
 
         <div class={style.col}>

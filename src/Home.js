@@ -107,7 +107,7 @@ function Home() {
         </div>
 
         <div class={style.col}>
-        <h3>Customers</h3>
+          <h3>Customers Served</h3>
           <img class={style.animation_icon} src={require("./images/team_m.jpg")}  alt="wifi"/> 
           <div class={style.render_mid}> 
           <h3 class={style.render}><CountUp delay={2} end={10} />+</h3>

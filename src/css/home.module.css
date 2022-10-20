@@ -188,7 +188,9 @@ header_views{
   max-width: 1000px; 
 }
 
+.customerSpacing{
 
+}
 .animation_icon{
   position: relative; 
   width: 65px; 
@@ -378,9 +380,9 @@ header_views{
   margin-left: 100px;
 }
 
- 
+
 .render_mid{
-  margin-left: 75px;
+  margin-left: 90px;
 }
 
 .render_last{
